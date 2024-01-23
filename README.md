@@ -3,7 +3,7 @@
 
 # Table of Contents
 - [Part 1: Using Protégé](#part-1-using-protégé)
-  - [1.1 Introduction to Protégé](#11-introduction-to-protege)
+  - [1.1 Introduction to Protégé](#11-introduction-to-protégé)
   - [1.2 Importing Files](#12-importing-files)
 - [Part 2: Get to Know GraphDB(Ontotext)](#part-2-get-to-know-graphdb-ontotext)
 - [Part 3: Transform CSV to OWL Using Ontotext Refine and GraphDB](#part-3-transform-csv-to-owl-using-ontotext-refine-and-graphdb)
