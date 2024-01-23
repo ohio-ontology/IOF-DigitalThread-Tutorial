@@ -2,6 +2,7 @@
 ## Overview
 
 # AGENDA
+- [IOFMaterialsTutorial](#iofmaterialstutorial)
 - [Part 1: Using Protégé](#Part-1:-Using-Protégé)
 - [Part 2: Get to Know GraphDB (Ontotext)](#Part-2:-Get-to-Know-GraphDB-(Ontotext))
 - [Part 3: Transform CSV to OWL Using Ontotext Refine and GraphDB](#Part-3:-Transform-CSV-to-OWL-Using-Ontotext-Refine-and-GraphDB)
