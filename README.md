@@ -1,7 +1,7 @@
 # IOF Digital Thread Tutorial
 ## Overview
 
-# AGENDA
+# Table of Contents
 - [Part 1: Using Protégé](#part-1:-using-protégé)
 - [Part 2: Get to Know GraphDB (Ontotext)](#Part-2:-Get-to-Know-GraphDB-(Ontotext))
 - [Part 3: Transform CSV to OWL Using Ontotext Refine and GraphDB](#Part-3:-Transform-CSV-to-OWL-Using-Ontotext-Refine-and-GraphDB)
@@ -14,7 +14,7 @@
 ![Example of Image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/0daa33d9-223d-445d-b1ad-883d5003b900)
 
 ## Part 2: Get to Know GraphDB (Ontotext)
-- To download for installing on your device --> https://www.ontotext.com/products/graphdb/download/
+- To download for installation on your device --> https://www.ontotext.com/products/graphdb/download/
 ![Creating Repository in GraphDB](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/457e13ef-6881-4624-9433-e6749f6a01f4)
 
 ## Part 3: Transform CSV to OWL Using Ontotext Refine and GraphDB
