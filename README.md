@@ -2,11 +2,11 @@
 ## Overview
 
 # Table of Contents
-- [Basic Tutorial](#basic-tutorial)
-- [Part 1: Using Protégé](#part-1-using-prot)
-- [Part 1: Using Protégé](#part-1:-using-protégé)
- - [Part 2: Get to Know GraphDB (Ontotext)](#Part-2:-Get-to-Know-GraphDB-(Ontotext))
- - [Part 3: Transform CSV to OWL Using Ontotext Refine and GraphDB](#Part-3:-Transform-CSV-to-OWL-Using-Ontotext-Refine-and-GraphDB)
+- [Part 1: Using Protégé](#part-1-using-protégé)
+  - [1.1 Introduction to Protégé](#1-1-introduction-to-protege)
+  - [1.2 Importing Files](#1-2-importing-files)
+- [Part 2: Get to Know GraphDB(Ontotext)](#part-2-get-to-know-graphdb-ontotext)
+- [Part 3: Transform CSV to OWL Using Ontotext Refine and GraphDB](#part-3-transform-csv-to-owl-using-ontotext-refine-and-graphdb)
 
 
 
@@ -14,6 +14,11 @@
 ## Part 1: Using Protégé
 
 ![Example of Image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/0daa33d9-223d-445d-b1ad-883d5003b900)
+
+### 1.1 Introduction to Protégé
+
+### 1.2 Importing Files
+
 
 ## Part 2: Get to Know GraphDB (Ontotext)
 - To download for installation on your device --> https://www.ontotext.com/products/graphdb/download/
