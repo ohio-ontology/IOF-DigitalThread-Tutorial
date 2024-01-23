@@ -2,9 +2,11 @@
 ## Overview
 
 # Table of Contents
+- [Basic Tutorial](#basic-tutorial)
 - [Part 1: Using Protégé](#part-1:-using-protégé)
-- [Part 2: Get to Know GraphDB (Ontotext)](#Part-2:-Get-to-Know-GraphDB-(Ontotext))
-- [Part 3: Transform CSV to OWL Using Ontotext Refine and GraphDB](#Part-3:-Transform-CSV-to-OWL-Using-Ontotext-Refine-and-GraphDB)
+- [Part 1: Using Protégé](#part-1:-using-protégé)
+ - [Part 2: Get to Know GraphDB (Ontotext)](#Part-2:-Get-to-Know-GraphDB-(Ontotext))
+ - [Part 3: Transform CSV to OWL Using Ontotext Refine and GraphDB](#Part-3:-Transform-CSV-to-OWL-Using-Ontotext-Refine-and-GraphDB)
 
 
 
