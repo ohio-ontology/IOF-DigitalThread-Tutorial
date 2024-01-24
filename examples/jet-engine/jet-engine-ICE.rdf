@@ -51,26 +51,26 @@
 	
 	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/jet-engine-ICE/c-DS1">
 		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-ICE/CompressorSpec"/>
-		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/c1"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/c1"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/c2"/>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/jet-engine-ICE/je-DS1">
 		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-ICE/JetEngineSpec"/>
 		<obo:BFO_0000110 rdf:resource="http://simpom.ohio.edu/examples/jet-engine-ICE/c-DS1"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/je1"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/je2"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/je3"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/je4"/>
 		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-ICE/th-DS1"/>
-		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/je1"/>
-		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/je2"/>
-		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/je3"/>
-		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/je4"/>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/jet-engine-ICE/th-DS1">
 		<rdf:type rdf:resource="&Core;DesignSpecification"/>
-		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/th-DSValueExpr"/>
-		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/th1-710"/>
-		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/th2-690"/>
-		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/th3-670"/>
-		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/th4-720"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/th1-710"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/th2-690"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/th3-670"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/th4-720"/>
 	</owl:NamedIndividual>
 	
 	<owl:AnnotationProperty rdf:about="&Core;prescribes">
