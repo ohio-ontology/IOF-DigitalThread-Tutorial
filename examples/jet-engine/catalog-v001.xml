@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://simpom.ohio.edu/examples/jet-engine-Base/" uri="jet-engine-Base.rdf"/>
     <uri id="User Entered Import Resolution" name="https://spec.industrialontologies.org/ontology/202301/core/meta/AnnotationVocabulary/" uri="file:/C:/Users/ss748014/Documents/GitHub/IOF-DigitalThread-Tutorial/ontologies/import/AnnotationVocabulary.rdf"/>
     <uri id="User Entered Import Resolution" name="https://spec.industrialontologies.org/ontology/core/Core/" uri="file:/C:/Users/ss748014/Documents/GitHub/IOF-DigitalThread-Tutorial/ontologies/import/Core.rdf"/>
     <uri id="Imports Wizard Entry" name="http://simpom.ohio.edu/ontology/cr/" uri="../../ontologies/import/cr.rdf"/>
