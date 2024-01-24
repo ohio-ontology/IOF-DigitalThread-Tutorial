@@ -12,7 +12,7 @@
 	<!ENTITY terms "http://purl.org/dc/terms/">
 	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
 ]>
-<rdf:RDF xml:base="http://simpom.ohio.edu/examples/jet-engine-base/"
+<rdf:RDF xml:base="http://simpom.ohio.edu/examples/jet-engine-Base/"
 	xmlns="http://www.semanticweb.org/sormaz/ontologies/2023/1/untitled-ontology-112#"
 	xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
 	xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
@@ -26,7 +26,7 @@
 	xmlns:terms="http://purl.org/dc/terms/"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
-	<owl:Ontology rdf:about="http://simpom.ohio.edu/examples/jet-engine-base/">
+	<owl:Ontology rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/">
 		<owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/"/>
 	</owl:Ontology>
 	
