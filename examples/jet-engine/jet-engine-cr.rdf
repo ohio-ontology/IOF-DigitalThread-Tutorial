@@ -27,7 +27,8 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
 	<owl:Ontology rdf:about="http://simpom.ohio.edu/examples/jet-engine-CR/">
-		<rdfs:comment xml:lang="en">Imported &quot;jet-engine-base&quot;</rdfs:comment>
+		<rdfs:comment xml:lang="en">CR stands for Conterpart Relation</rdfs:comment>
+		<rdfs:comment xml:lang="en">Imported &quot;jet-engine-Base&quot; and &quot;cr&quot; rdf file.</rdfs:comment>
 		<owl:imports rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/"/>
 		<owl:imports rdf:resource="http://simpom.ohio.edu/ontology/cr/"/>
 	</owl:Ontology>
