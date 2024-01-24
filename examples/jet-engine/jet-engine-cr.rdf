@@ -80,7 +80,7 @@
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/jet-engine-CR/c-d1">
-		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/Compressor"/>
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/Compressor"/>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/jet-engine-CR/je-DS1">
@@ -93,24 +93,14 @@
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/jet-engine-CR/je-d1">
-		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/JetEngine"/>
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/JetEngine"/>
 		<Core:hasComponentPartAtSomeTime rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/c-d1"/>
 		<Core:hasQuality rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/th-d1"/>
 	</owl:NamedIndividual>
 	
 	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/jet-engine-CR/th-d1">
-		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/Thrust"/>
 		<Core:hasValueExpressionAtAllTimes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/th-DSValueExpr"/>
 	</owl:NamedIndividual>
-	
-	<owl:Class rdf:about="http://simpom.ohio.edu/examples/jet-engine-base/Compressor">
-	</owl:Class>
-	
-	<owl:Class rdf:about="http://simpom.ohio.edu/examples/jet-engine-base/JetEngine">
-	</owl:Class>
-	
-	<owl:Class rdf:about="http://simpom.ohio.edu/examples/jet-engine-base/Thrust">
-	</owl:Class>
 	
 	<owl:AnnotationProperty rdf:about="&Core;componentPartOfAtSomeTime">
 	</owl:AnnotationProperty>
