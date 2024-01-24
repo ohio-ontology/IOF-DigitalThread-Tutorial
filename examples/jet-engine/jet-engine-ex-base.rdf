@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY AnnotationVocabulary "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+	<!ENTITY Core "https://spec.industrialontologies.org/ontology/core/Core/">
+	<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+	<!ENTITY jet-engine-base "http://simpom.ohio.edu/examples/jet-engine-base/">
+	<!ENTITY obo "http://purl.obolibrary.org/obo/">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY terms "http://purl.org/dc/terms/">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="http://simpom.ohio.edu/examples/jet-engine-base/"
+	xmlns="http://www.semanticweb.org/sormaz/ontologies/2023/1/untitled-ontology-112#"
+	xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+	xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:jet-engine-base="http://simpom.ohio.edu/examples/jet-engine-base/"
+	xmlns:obo="http://purl.obolibrary.org/obo/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:terms="http://purl.org/dc/terms/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="http://simpom.ohio.edu/examples/jet-engine-base/">
+		<owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/"/>
+	</owl:Ontology>
+	
+	<owl:AnnotationProperty rdf:about="&dc;creator">
+	</owl:AnnotationProperty>
+	
+	<owl:AnnotationProperty rdf:about="&dc;date">
+	</owl:AnnotationProperty>
+	
+	<owl:Class rdf:about="&jet-engine-base;Compressor">
+		<rdfs:subClassOf rdf:resource="&Core;MaterialArtifact"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&jet-engine-base;JetEngine">
+		<rdfs:subClassOf rdf:resource="&Core;MaterialArtifact"/>
+	</owl:Class>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;a1">
+		<rdf:type rdf:resource="&Core;MaterialArtifact"/>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-08-10T19:01:49Z</dc:date>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;c1">
+		<rdf:type rdf:resource="&jet-engine-base;Compressor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;c2">
+		<rdf:type rdf:resource="&jet-engine-base;Compressor"/>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-08-10T18:57:00Z</dc:date>
+	</owl:NamedIndividual>
+	
+	<owl:DatatypeProperty rdf:about="&jet-engine-base;hasLowerBoundValue">
+		<rdfs:subPropertyOf rdf:resource="&Core;hasSimpleExpressionValue"/>
+		<rdfs:label>has lower bound value</rdfs:label>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-09-07T18:31:07Z</dc:date>
+	</owl:DatatypeProperty>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;je1">
+		<rdf:type rdf:resource="&jet-engine-base;JetEngine"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-base;c1"/>
+		<Core:hasQuality rdf:resource="&jet-engine-base;th1-710"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;je2">
+		<rdf:type rdf:resource="&jet-engine-base;JetEngine"/>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-08-10T18:57:08Z</dc:date>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-base;c2"/>
+		<Core:hasQuality rdf:resource="&jet-engine-base;th2-690"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;je3">
+		<rdf:type rdf:resource="&jet-engine-base;JetEngine"/>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-08-10T18:57:14Z</dc:date>
+		<Core:hasQuality rdf:resource="&jet-engine-base;th3-670"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;je4">
+		<rdf:type rdf:resource="&jet-engine-base;JetEngine"/>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-08-10T18:59:12Z</dc:date>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-base;a1"/>
+		<Core:hasQuality rdf:resource="&jet-engine-base;th4-720"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;th-DSValueExpr">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-09-07T18:13:09Z</dc:date>
+		<jet-engine-base:hasLowerBoundValue rdf:datatype="&xsd;decimal">700</jet-engine-base:hasLowerBoundValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;th1-710">
+		<rdf:type rdf:resource="&jet-engine-base;thrust"/>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-08-11T13:48:30Z</dc:date>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-base;th1ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;th1ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-08-11T13:49:21Z</dc:date>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;integer">710</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;th2-690">
+		<rdf:type rdf:resource="&jet-engine-base;thrust"/>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-08-11T13:48:37Z</dc:date>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-base;th2ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;th2ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-08-11T13:45:47Z</dc:date>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;integer">690</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;th3-670">
+		<rdf:type rdf:resource="&jet-engine-base;thrust"/>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-08-11T13:48:46Z</dc:date>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-base;th3ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;th3ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-08-11T13:45:57Z</dc:date>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;integer">670</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;th4-720">
+		<rdf:type rdf:resource="&jet-engine-base;thrust"/>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-08-11T13:49:00Z</dc:date>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-base;th4ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-base;th4ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<dc:creator>ss748014</dc:creator>
+		<dc:date rdf:datatype="&xsd;dateTime">2023-08-11T13:46:05Z</dc:date>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;integer">720</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:Class rdf:about="&jet-engine-base;thrust">
+		<rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+	</owl:Class>
+
+</rdf:RDF>

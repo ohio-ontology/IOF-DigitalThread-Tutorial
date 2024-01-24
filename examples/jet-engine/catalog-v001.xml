@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://simpom.ohio.edu/ontology/cr/" uri="../../ontologies/import/cr.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
+		<uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl" uri="../../ontologies/import/bfo-2020.owl"/>
+        <uri id="User Entered Import Resolution" name="http://simpom.ohio.edu/examples/jet-engine-base/" uri="jet-engine-ex-base.rdf"/>
+        <uri id="User Entered Import Resolution" name="https://spec.industrialontologies.org/ontology/core/20221007/Core/" uri="../../ontologies/import/Core.rdf"/>
+        <uri id="Imports Wizard Entry" name="http://simpom.ohio.edu/ontology/mro/" uri="file:/C:/Users/sormaz/Documents/GitHub/ou-nist-project/ontologies/import/core_bfo_mro.rdf"/>
+        <uri id="User Entered Import Resolution" name="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/" uri="../../ontologies/import/AnnotationVocabulary.rdf"/>
+    </group>
+</catalog>

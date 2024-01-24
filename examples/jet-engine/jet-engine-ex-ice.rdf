@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY AnnotationVocabulary "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+	<!ENTITY Core "https://spec.industrialontologies.org/ontology/core/Core/">
+	<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+	<!ENTITY jet-engine-ice "http://simpom.ohio.edu/machining/examples/jet-engine-ice/">
+	<!ENTITY jet-engine-ice1 "http://simpom.ohio.edu/examples/jet-engine-ice/">
+	<!ENTITY obo "http://purl.obolibrary.org/obo/">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY terms "http://purl.org/dc/terms/">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="http://simpom.ohio.edu/examples/jet-engine-ice"
+	xmlns="http://simpom.ohio.edu/machining/examples/jet-engine-ice#"
+	xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+	xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:jet-engine-ice="http://simpom.ohio.edu/machining/examples/jet-engine-ice/"
+	xmlns:jet-engine-ice1="http://simpom.ohio.edu/examples/jet-engine-ice/"
+	xmlns:obo="http://purl.obolibrary.org/obo/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:terms="http://purl.org/dc/terms/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="http://simpom.ohio.edu/examples/jet-engine-ice">
+		<owl:imports rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/"/>
+	</owl:Ontology>
+	
+	<owl:AnnotationProperty rdf:about="&dc;creator">
+	</owl:AnnotationProperty>
+	
+	<owl:AnnotationProperty rdf:about="&dc;date">
+	</owl:AnnotationProperty>
+	
+	<owl:Class rdf:about="&jet-engine-ice1;CompressorSpec">
+		<rdfs:subClassOf rdf:resource="&Core;DesignSpecification"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&jet-engine-ice1;JetEngineSpec">
+		<rdfs:subClassOf rdf:resource="&Core;DesignSpecification"/>
+	</owl:Class>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-ice1;c1-DS">
+		<rdf:type rdf:resource="&jet-engine-ice1;CompressorSpec"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/c1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-ice1;je1-DS">
+		<rdf:type rdf:resource="&jet-engine-ice1;JetEngineSpec"/>
+		<obo:BFO_0000110 rdf:resource="&jet-engine-ice1;c1-DS"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/je1"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/je2"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/je3"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/je4"/>
+		<Core:prescribes rdf:resource="&jet-engine-ice1;th1-DS"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-ice1;th1-DS">
+		<rdf:type rdf:resource="&Core;DesignSpecification"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/th-DSValueExpr"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/th1-710"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/th2-690"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/th3-670"/>
+		<Core:prescribes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/th4-720"/>
+	</owl:NamedIndividual>
+
+</rdf:RDF>
