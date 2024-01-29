@@ -46,11 +46,21 @@ After you successfully installed Protégé on your device, subsequently launch t
 -	You now have an RDF file to work on for the first part of this tutorial. :) 
 > [!TIP]  
 > Make sure to type **.rdf** after the name that you want to save as and please ignore _File of Type:_
+
 ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/1d1dac92-f71b-4cd5-a308-9fe2f4b2a3c5)
 
-
 ### 1.4 Import Ontology Files
+Importing existing ontologies into Protégé is Simple! For this part, we will import **Core.rdf** (our IOF core ontology file), which will automatically do _indirect import_ of **bfo-2020.owl**(Basic Formal Ontology) and also **AnnotationVocabulary**.
 
+-	Make sure you are in the **“Active Ontology”** tab *(BLUE 1)*, if not you can just click on the tab.
+-	Click on the **Plus Button** (next to the word direct import) *(Blue 2)*. This will open the *Import ontology wizard*.
+![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/c3fbad7c-20a8-46a9-901d-c4d9a14b7c0f)
+-	For this tutorial, we will select the first option which is **_“Import an ontology contained in a specific file.”_**
+-	Then, Click **Continue** (at the bottom right corner of the popup window) and then select **Browse…**
+-	Locate the file _(Core.rdf)_ that you downloaded to your computer (Tutorial folder and then import).
+-	You also can simply _double click_ on the file name or just _select the file_ then click _Open_.
+> [!EXAMPLE]
+> For example, we cloned this (DigitalThred tutorial) repository to our local computer folder, so our file path will be GitHub\IOF-DigitalThread-Tutorial\import\Core.rdf
 ### 1.5 Create Classes 
 ### 1.6 Create Individuals (Instances)
 ### 1.7 Object Property Assertions
