@@ -22,10 +22,10 @@
 Protege is a powerful open-source ontology editor and knowledge-based framework. In this tutorial, we will walk you through the process of creating and managing ontologies using Protege.
 ### 1.2 Download and Install Protégé
 You can download it easily from their official website (https://protege.stanford.edu/download/).
-> [!IMPORTANT]  
-> Ensure that your computer is installed with Java because Protégé works based on Java application.
+> [!NOTE]  
+> The platforms-specific archives include the Java JRE, so it is __not_ required_ to have Java installed on your machine.
 
-Looking for more tutorial visit [protege.stanford.edu](https://protege.stanford.edu/conference/2006/submissions/slides/OWLTutorial_Part1.pdf)
+Looking for to learn more about Protégé visit [protegewiki.stanford.edu]([https://protegewiki.stanford.edu/wiki/Main_Page])
 
 ### 1.3	Launch and Setup
 After you successfully installed Protégé on your device, subsequently launch the application!
@@ -70,7 +70,7 @@ Importing existing ontologies into Protégé is Simple! For this part, we will i
     -	**_Direct Import_**:
         -	*Core* (https://spec.industrialontologies.org/ontology/202301/core/Core/)
     -	**_Indirect Imports_**:
-        -	*AnnotationVocabulary*(https://spec.industrialontologies.org/ontology/202301/core/meta/AnnotationVocabulary/)
+        -	*AnnotationVocabulary* (https://spec.industrialontologies.org/ontology/202301/core/meta/AnnotationVocabulary/)
         -	*bfo* (http://purl.obolibrary.org/obo/bfo/2020/bfo.owl) {local file due to some issue}
 ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/30dcb44a-2bc6-4cc2-8281-92a2a42d7024)
 
@@ -94,13 +94,15 @@ To relate to our case studies we will create 2 Classes which are Jet Engine and 
 ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/52b877e0-87d5-408f-b1e5-546a2dcb3cd9)
 
 -	In the popup dialog box, for type into _Name_: **JetEngine** , then Select **OK**
--	Repeat the same process (1.5.2) to create a Compressor class (Name: Compressor)
-o	You could also create a sibling for the JetEngine class!
--	Lastly, create a class named “Thrust” as a Child class of quality
-
+-	Repeat the same process to _create_ a **Compressor class** (Name: Compressor)
+  _-	You could also create a sibling for the JetEngine class!_
+-	Lastly, create a class named **“Thrust”** as _a Child class_ of **quality**
 
 
 ### 1.6 Create Individuals (Instances)
+-	Navigate to “Individuals” tab (still in the :Entities” group tab)
+-	Click Create individual ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/65700046-090c-472c-8ea9-5f1e61995de1)
+ (locate under the purple individual view)
 
 
 ### 1.7 Object Property Assertions
