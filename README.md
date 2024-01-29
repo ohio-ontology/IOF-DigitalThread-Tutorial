@@ -18,12 +18,14 @@
 
 
 ## Part 1: Using Protégé
-
-![Example of Image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/0daa33d9-223d-445d-b1ad-883d5003b900)
-
 ### 1.1 Introduction to Protégé
+Protege is a powerful open-source ontology editor and knowledge-based framework. In this tutorial, we will walk you through the process of creating and managing ontologies using Protege.
 ### 1.2 Download and Install Protégé
-### 1.3	Launch and Set Up
+You can download it easily from their official website (https://protege.stanford.edu/download/).
+> [!IMPORTANT]  
+> Ensure that your computer is installed with Java because Protégé works based on Java application.
+
+### 1.3	Launch and Setup
 ### 1.4 Import Ontology Files
 ### 1.5 Create Classes 
 ### 1.6 Create Individuals (Instances)
