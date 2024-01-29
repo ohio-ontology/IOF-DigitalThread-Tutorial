@@ -4,7 +4,7 @@
 # Table of Contents
 - [Part 1: Using Protégé](#part-1-using-protégé)
   - [1.1 Introduction to Protégé](#11-introduction-to-protégé)
-  - [1.2 Download and Install](#12-download-and-install)
+  - [1.2 Download and Install](#12-download-and-install-protégé)
   - [1.3 Launch and Setup](#13-launch-and-setup)
   - [1.4 Import Ontology Files](#14-import-ontology-files)
   - [1.5 Create Classes](#15-create-classes)
@@ -23,7 +23,7 @@
 
 ### 1.1 Introduction to Protégé
 ### 1.2 Download and Install Protégé
-### 1.3	Launch Protégé and Set Up
+### 1.3	Launch and Set Up
 ### 1.4 Import Ontology Files
 ### 1.5 Create Classes 
 ### 1.6 Create Individuals (Instances)
