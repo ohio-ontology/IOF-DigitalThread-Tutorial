@@ -10,8 +10,11 @@
   - [1.5 Create Classes](#15-create-classes)
   - [1.6 Create Individuals(Instances)](#16-create-individuals-instances)
   - [1.7 Object Property Assertions](#17-object-property-assertions)
-- 
+  - [1.8 Practice for Part 1](#18-practice-for-part-1)
+    - [1.8.1 Using Practice File](#181-using-practice-file)
+    - [1.8.2 HermiT Reasoner in Protégé](#182-hermit-reasoner-in-protégé)
 - [Part 2: Get to Know GraphDB(Ontotext)](#part-2-get-to-know-graphdb-ontotext)
+  - 
 - [Part 3: Transform CSV to OWL Using Ontotext Refine and GraphDB](#part-3-transform-csv-to-owl-using-ontotext-refine-and-graphdb)
 
 
@@ -115,7 +118,7 @@ _ (locate under the purple individual view)_
 -	Then make sure you select the je1 individual _(RED 1)_ _[just click on it blue tab will indicate that you are selecting it]_
 -	In the Description Box, locate the plus sign next to Type: then click on it. _(RED 2)_ A box will pop up.
 -	Select Class expression editor (it should be already automatically selected)
-  -	Then type in Jet only, then press Ctrl + spacebar, the program will autocomplete the class name as JetEngine _(RED 3)_
+  -	Then type in Jet only, then press Ctrl + spacebar, and the program will autocomplete the class name as JetEngine _(RED 3)_
   -	Press OK to finish assigning a class to the individual
 -	REPEAT the 1.6 process to _create an individual_ for **Compressor** (Name: **c1**)
 -	REPEAT another round but _create an individual_ for **Thrust** (Name: **th1-720**)
@@ -139,6 +142,12 @@ next to the Object property assertions (“Property assertions” view ) _(YELLO
 - <ins>Repeat</ins> a similar process to get the second part: _“The engine has a Thrust of 720 kN.”_
 o	Hint The object property name is **"has quality"**. The individual name is **th1-720**.
 ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/885df871-8539-4ff6-b59b-a29b894288cc)
+
+### 1.8 Practice for Part 1
+
+#### 1.8.1 Using Practice File
+#### 1.8.2 HermiT Reasoner in Protégé
+
 
 ## Part 2: Get to Know GraphDB (Ontotext)
 - To download for installation on your device --> https://www.ontotext.com/products/graphdb/download/
