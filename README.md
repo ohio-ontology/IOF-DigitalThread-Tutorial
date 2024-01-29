@@ -59,8 +59,22 @@ Importing existing ontologies into Protégé is Simple! For this part, we will i
 -	Then, Click **Continue** (at the bottom right corner of the popup window) and then select **Browse…**
 -	Locate the file _(Core.rdf)_ that you downloaded to your computer (Tutorial folder and then import).
 -	You also can simply _double click_ on the file name or just _select the file_ then click _Open_.
-> [!EXAMPLE]
-> For example, we cloned this (DigitalThred tutorial) repository to our local computer folder, so our file path will be GitHub\IOF-DigitalThread-Tutorial\import\Core.rdf
+> **EXAMPLE**
+> We cloned this (DigitalThred tutorial) repository to our local computer folder, so our file path will be GitHub\IOF-DigitalThread-Tutorial\import\Core.rdf
+
+-	Make sure that the part file is correct and then select **Continue**
+-	Lastly, select **Finish**!
+![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/6e52886b-147f-42d9-b8dd-f169df73071f)
+
+-	If everything went according to plan, your protégé should have (as show below):
+    -	**_Direct Import_**:
+        -	*Core* (https://spec.industrialontologies.org/ontology/202301/core/Core/)
+    -	**_Indirect Imports_**:
+        -	*AnnotationVocabulary*(https://spec.industrialontologies.org/ontology/202301/core/meta/AnnotationVocabulary/)
+        -	*bfo* (http://purl.obolibrary.org/obo/bfo/2020/bfo.owl) {local file due to some issue}
+![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/30dcb44a-2bc6-4cc2-8281-92a2a42d7024)
+
+
 ### 1.5 Create Classes 
 ### 1.6 Create Individuals (Instances)
 ### 1.7 Object Property Assertions
