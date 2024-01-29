@@ -24,6 +24,7 @@ Protege is a powerful open-source ontology editor and knowledge-based framework.
 You can download it easily from their official website (https://protege.stanford.edu/download/).
 > [!IMPORTANT]  
 > Ensure that your computer is installed with Java because Protégé works based on Java application.
+Looking for more tutorial visit [protege.stanford.edu](https://protege.stanford.edu/conference/2006/submissions/slides/OWLTutorial_Part1.pdf)
 
 ### 1.3	Launch and Setup
 ### 1.4 Import Ontology Files
