@@ -30,13 +30,27 @@ Looking for more tutorial visit [protege.stanford.edu](https://protege.stanford.
 ### 1.3	Launch and Setup
 After you successfully installed Protégé on your device, subsequently launch the application!
 - The first step is to set up an IRI (Internationalized Resource Identifier) for your ontology. In the Ontology header section, you can configure the Ontology IRI yourself. For example, you can set the Ontology IRI to **_http://simpom.ohio.edu/examples/f2f-2024-DigitalThread/_** as shown below.
+> [!TIP]  
+> IRI of an ontology in Protege is very important in ensuring uniqueness, accessibility, interoperability, documentation, and hence effective use of the ontology. Choose meaningful and well-structured IRIs for your ontology and its components that serve a wider goal of ontology engineering and the Semantic Web while working with Protege or any other development tool for ontologies.
+
+![Picture1](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/c4caedf5-fd13-47cf-89d4-337d5c077d4d)
 > [!NOTE]  
 > In this tutorial, we will focus on simple tasks such as importing ontologies, creating classes and instances, and adding relations for this ontology only, so feel free to keep it as straightforward as possible.
-![Picture1](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/c4caedf5-fd13-47cf-89d4-337d5c077d4d)
 
+-	After you are satisfied with the Ontology IRI name, select **_File_** then select **_Save_** *or simply press Ctrl + S*
+![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/844aeecc-9819-4d63-9cc0-50bc9077dc5d)
+
+-	A dialog box will pop up and you can pick the type of file that you would like to save your file as. For this example, we selected **RDF/XML** Syntax then select **_OK_**
+-	Then select a location that you would like to save your file at _(RED 1)_.
+-	Type in **File Name**: e.g. **f2f-2024-DigitalThread.rdf** (_RED 2_: this just helps remember the name since the Ontology IRI is “http://simpom.ohio.edu/examples/**f2f-2024-DigitalThread**/”)
+-	You now have an RDF file to work on for the first part of this tutorial. :) 
+> [!TIP]  
+> Make sure to type **.rdf** after the name that you want to save as and please ignore _File of Type:_
+![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/1d1dac92-f71b-4cd5-a308-9fe2f4b2a3c5)
 
 
 ### 1.4 Import Ontology Files
+
 ### 1.5 Create Classes 
 ### 1.6 Create Individuals (Instances)
 ### 1.7 Object Property Assertions
