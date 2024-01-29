@@ -100,12 +100,45 @@ To relate to our case studies we will create 2 Classes which are Jet Engine and 
 
 
 ### 1.6 Create Individuals (Instances)
--	Navigate to “Individuals” tab (still in the :Entities” group tab)
--	Click Create individual ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/65700046-090c-472c-8ea9-5f1e61995de1)
- (locate under the purple individual view)
+-	Navigate to **“Individuals”** tab (still in the _“Entities”_ group tab)
+-	Click **Create individual** ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/65700046-090c-472c-8ea9-5f1e61995de1)
+_ (locate under the purple individual view)_
+
+![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/def12bdb-f22d-41a7-9d7f-30a24c7eb602)
+
+-	A window called Create a new OWLNamedIndividual (a dialog box) will pop up.
+-	Type in the Name: **je1**
+
+> [!NOTE]
+> je1 is the short name for jet engine number 1.
+
+-	Then make sure you select the je1 individual _(RED 1)_ _[just click on it blue tab will indicate that you are selecting it]_
+-	In the Description Box, locate the plus sign next to Type: then click on it. _(RED 2)_ A box will pop up.
+-	Select Class expression editor (it should be already automatically selected)
+  -	Then type in Jet only, then press Ctrl + spacebar, the program will autocomplete the class name as JetEngine _(RED 3)_
+  -	Press OK to finish assigning a class to the individual
+-	REPEAT the 1.6 process to _create an individual_ for **Compressor** (Name: **c1**)
+-	REPEAT another round but _create an individual_ for **Thrust** (Name: **th1-720**)
+![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/5636dbb6-6791-4bd8-ac5e-230b09941c05)
 
 
 ### 1.7 Object Property Assertions
+-	According to an example sentence: 
+_**“Jet Engine 1 has a Compressor 1 as its component. The engine has a Thrust of 720 kN.”**_
+
+-	Look at the window called **Property assertion** (while in the _“Individuals”_ tab) located at the bottom right corner.
+> [!TIP]
+> If not on the interface go to the top tabs find _Window-->Views-->Individuals View-->Property assertions_, then click on the screen for the location that you would like to have it at.
+-	The object properties that will be added are **"has component part at some time"** and **"has quality"**
+  -	First, make sure that you select the je1 individual _(YELLOW 1)_ [just click on it blue tab will indicate that you are selecting it]
+  -	Click on the plus sign![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/eedc5cb5-ef53-4b34-8aab-4fae7c4be99b)
+next to the Object property assertions (“Property assertions” view ) _(YELLOW 2)_
+  -	In the popped-up dialog box, enter the object property name Click on it and Type **"has component part at some time"** _(YELLOW 3)_.
+  -	In Enter individual name Click on it and type c1 _(YELLOW 4)_  Then click OK _(YELLOW 5)_ to complete adding the object property.
+-	Now you have the part: _“Jet Engine 1 has a Compressor 1 as its component.”_
+- <ins>Repeat</ins> a similar process to get the second part: _“The engine has a Thrust of 720 kN.”_
+o	Hint The object property name is **"has quality"**. The individual name is **th1-720**.
+![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/885df871-8539-4ff6-b59b-a29b894288cc)
 
 ## Part 2: Get to Know GraphDB (Ontotext)
 - To download for installation on your device --> https://www.ontotext.com/products/graphdb/download/
