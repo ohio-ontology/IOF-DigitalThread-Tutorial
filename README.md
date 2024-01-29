@@ -81,6 +81,8 @@ To relate to our case studies we will create 2 Classes which are Jet Engine and 
 -	Click **owl:Thing** (Green 2)
 -	Select **“View”** tab on the top (Green 3)
 -	Choose option Expand all, (Red) this will allow you to see all the classes that you imported into your ontology.
+
+
 | image                                                                                                    
                   | image                                                                                  
                                                               |
