@@ -29,7 +29,7 @@ Looking for more tutorial visit [protege.stanford.edu](https://protege.stanford.
 
 ### 1.3	Launch and Setup
 After you successfully installed Protégé on your device, subsequently launch the application!
-- The first step is to set up an IRI (Internationalized Resource Identifier) for your ontology. In the Ontology header section, you can configure the Ontology IRI yourself. For example, you can set the Ontology IRI to http://simpom.ohio.edu/examples/f2f-2024-DigitalThread/ as shown below.
+- The first step is to set up an IRI (Internationalized Resource Identifier) for your ontology. In the Ontology header section, you can configure the Ontology IRI yourself. For example, you can set the Ontology IRI to "http://simpom.ohio.edu/examples/f2f-2024-DigitalThread/" as shown below.
 > [!NOTE]  
 > In this tutorial, we will focus on simple tasks such as importing ontologies, creating classes and instances, and adding relations for this ontology only, so feel free to keep it as straightforward as possible.
 ![Picture1](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/c4caedf5-fd13-47cf-89d4-337d5c077d4d)
