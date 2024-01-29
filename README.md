@@ -80,12 +80,29 @@ To relate to our case studies we will create 2 Classes which are Jet Engine and 
 -	Navigate  to the **_“Entities”_** tab *(GREEN 1)* [Protégé will automatically navigate you to the “Classes” tab]
 -	Click **owl:Thing** (Green 2)
 -	Select **“View”** tab on the top (Green 3)
--	Choose option Expand all, (Red) this will allow you to see all the classes that you imported into your ontology.
+-	Choose the option **Expand all**, this will allow you to see all the classes that you imported into your ontology.
 
 ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/1cf12ec6-3b6e-40f8-8598-4d050fa67c32)
 
+-	Locate the class named as _“material artifact”_ (_owl:Thing_ --> _entity_ --> _continuant_ --> _independent continuant_ --> _material entity_ --> _object_ --> **material artifact**)
+> [!TIP]
+> To activate the search engine, simply press Ctrl + F, type the keyword of what you are trying to find, and all the related results will appear. Then, double-click on the item you are interested in to locate it. It is that easy!
+-	While class **“material artifact”** is selected, select **Add subclass** ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/6e6b2c1c-d8a4-4010-b2b5-ad4f51c2e4fe)
+   (locate under _“Classes”_ tab)
+  -	Or Go to **Edit** _(RED 1)_, then **Create Child** _(RED 2)_
+  -	Or JUST _**Ctrl + E**_ (as highlighted).
+![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/52b877e0-87d5-408f-b1e5-546a2dcb3cd9)
+
+-	In the popup dialog box, for type into _Name_: **JetEngine** , then Select **OK**
+-	Repeat the same process (1.5.2) to create a Compressor class (Name: Compressor)
+o	You could also create a sibling for the JetEngine class!
+-	Lastly, create a class named “Thrust” as a Child class of quality
+
+
 
 ### 1.6 Create Individuals (Instances)
+
+
 ### 1.7 Object Property Assertions
 
 ## Part 2: Get to Know GraphDB (Ontotext)
