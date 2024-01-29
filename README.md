@@ -81,10 +81,11 @@ To relate to our case studies we will create 2 Classes which are Jet Engine and 
 -	Click **owl:Thing** (Green 2)
 -	Select **“View”** tab on the top (Green 3)
 -	Choose option Expand all, (Red) this will allow you to see all the classes that you imported into your ontology.
-
+|         image          |          image         |
 | ---------------------- | ---------------------- |
-| ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/927fa908-98ac-4c16-a81b-6c4d4708019a)| ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/96eed597-ff6c-4860-a752-7f79e9d27751)
- |
+|![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/927fa908-98ac-4c16-a81b-6c4d4708019a)|![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/96eed597-ff6c-4860-a752-7f79e9d27751)|
+
+
 ### 1.6 Create Individuals (Instances)
 ### 1.7 Object Property Assertions
 
