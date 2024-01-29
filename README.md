@@ -66,7 +66,7 @@ Importing existing ontologies into Protégé is Simple! For this part, we will i
 -	Lastly, select **Finish**!
 ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/6e52886b-147f-42d9-b8dd-f169df73071f)
 
--	If everything went according to plan, your protégé should have (as show below):
+-	If everything went according to plan, your protégé should have (as shown below):
     -	**_Direct Import_**:
         -	*Core* (https://spec.industrialontologies.org/ontology/202301/core/Core/)
     -	**_Indirect Imports_**:
@@ -75,7 +75,16 @@ Importing existing ontologies into Protégé is Simple! For this part, we will i
 ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/30dcb44a-2bc6-4cc2-8281-92a2a42d7024)
 
 
-### 1.5 Create Classes 
+### 1.5 Create Classes
+To relate to our case studies we will create 2 Classes which are Jet Engine and Compressor.
+-	Navigate  to the **_“Entities”_** tab *(GREEN 1)* [Protégé will automatically navigate you to the “Classes” tab]
+-	Click **owl:Thing** (Green 2)
+-	Select **“View”** tab on the top (Green 3)
+-	Choose option Expand all, (Red) this will allow you to see all the classes that you imported into your ontology.
+
+| ---------------------- | ---------------------- |
+| ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/927fa908-98ac-4c16-a81b-6c4d4708019a)| ![image](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/96eed597-ff6c-4860-a752-7f79e9d27751)
+ |
 ### 1.6 Create Individuals (Instances)
 ### 1.7 Object Property Assertions
 
