@@ -11,3 +11,7 @@
 
 1. Check your computer's download folder or the location specified in your browser settings to find the downloaded ZIP file. Once you've located it, extract the contents of the ZIP file and save them in a location where you can easily access them in the future.
 ![Screenshot 2024-02-05 223545](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/d92ee9da-98fd-4f8a-b65a-af7577a6e3b6)
+
+> [!IMPORTANT]
+> There are multiple items but make sure you have these three items, as shown in the image below. (folders: examples, ontologies, and a file: iof-digital-thread-tutorial)
+> ![Screenshot 2024-02-05 223809](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/a4097274-f461-4558-b6aa-1b9bf4eea5bc)
