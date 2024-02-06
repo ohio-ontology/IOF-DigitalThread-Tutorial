@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY AnnotationVocabulary "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+	<!ENTITY base "http://simpom.ohio.edu/examples/jet-engine-2ed-base/">
+	<!ENTITY cr "http://simpom.ohio.edu/ontology/cr/">
+	<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+	<!ENTITY fn "http://www.w3.org/2005/xpath-functions#">
+	<!ENTITY iof-core "https://spec.industrialontologies.org/ontology/core/Core/">
+	<!ENTITY mapper "http://www.ontotext.com/mapper/">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<!ENTITY rdf4j "http://rdf4j.org/schema/rdf4j#">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY sesame "http://www.openrdf.org/schema/sesame#">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY terms "http://purl.org/dc/terms/">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="http://simpom.ohio.edu/examples/jet-engine-2ed-base/actual-je/"
+	xmlns="http://simpom.ohio.edu/examples/jet-engine-2ed-base/actual-je/"
+	xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+	xmlns:base="http://simpom.ohio.edu/examples/jet-engine-2ed-base/"
+	xmlns:cr="http://simpom.ohio.edu/ontology/cr/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:iof-core="https://spec.industrialontologies.org/ontology/core/Core/"
+	xmlns:mapper="http://www.ontotext.com/mapper/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdf4j="http://rdf4j.org/schema/rdf4j#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:terms="http://purl.org/dc/terms/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="http://simpom.ohio.edu/examples/jet-engine-2ed-base/actual-je/">
+		<owl:imports rdf:resource="http://simpom.ohio.edu/examples/jet-engine-2ed-cr/"/>
+		<owl:imports rdf:resource="http://simpom.ohio.edu/ontology/cr/"/>
+	</owl:Ontology>
+	
+	<owl:NamedIndividual rdf:about="&base;bb1">
+		<rdf:type rdf:resource="&base;BallBearing"/>
+		<iof-core:hasCapability rdf:resource="&base;lo0"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;bb10">
+		<rdf:type rdf:resource="&base;BallBearing"/>
+		<iof-core:hasCapability rdf:resource="&base;lo9"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;bb2">
+		<rdf:type rdf:resource="&base;BallBearing"/>
+		<iof-core:hasCapability rdf:resource="&base;lo1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;bb5">
+		<rdf:type rdf:resource="&base;BallBearing"/>
+		<iof-core:hasCapability rdf:resource="&base;lo4"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;bb6">
+		<rdf:type rdf:resource="&base;BallBearing"/>
+		<iof-core:hasCapability rdf:resource="&base;lo5"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;bb7">
+		<rdf:type rdf:resource="&base;BallBearing"/>
+		<iof-core:hasCapability rdf:resource="&base;lo6"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;bb8">
+		<rdf:type rdf:resource="&base;BallBearing"/>
+		<iof-core:hasCapability rdf:resource="&base;lo7"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;c1">
+		<rdf:type rdf:resource="&base;Compressor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;c10">
+		<rdf:type rdf:resource="&base;Compressor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;c2">
+		<rdf:type rdf:resource="&base;Compressor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;c4">
+		<rdf:type rdf:resource="&base;Compressor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;c5">
+		<rdf:type rdf:resource="&base;Compressor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;c6">
+		<rdf:type rdf:resource="&base;Compressor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;c7">
+		<rdf:type rdf:resource="&base;Compressor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;c9">
+		<rdf:type rdf:resource="&base;Compressor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;di0">
+		<rdf:type rdf:resource="&base;Diameter"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;diameterve0"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;di1">
+		<rdf:type rdf:resource="&base;Diameter"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;diameterve1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;di2">
+		<rdf:type rdf:resource="&base;Diameter"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;diameterve2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;di3">
+		<rdf:type rdf:resource="&base;Diameter"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;diameterve3"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;di5">
+		<rdf:type rdf:resource="&base;Diameter"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;diameterve5"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;di6">
+		<rdf:type rdf:resource="&base;Diameter"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;diameterve6"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;di8">
+		<rdf:type rdf:resource="&base;Diameter"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;diameterve8"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;di9">
+		<rdf:type rdf:resource="&base;Diameter"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;diameterve9"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;diameterve0">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">47.9285</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;diameterve1">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">48.0813</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;diameterve2">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">47.9494</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;diameterve3">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">48.0423</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;diameterve5">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">47.9745</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;diameterve6">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">48.0051</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;diameterve8">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">48.073</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;diameterve9">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">48.0339</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;fa1">
+		<rdf:type rdf:resource="&base;FanAssembly"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;bb1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;fa10">
+		<rdf:type rdf:resource="&base;FanAssembly"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;bb10"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;fa2">
+		<rdf:type rdf:resource="&base;FanAssembly"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;bb2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;fa3">
+		<rdf:type rdf:resource="&base;FanAssembly"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;fa5">
+		<rdf:type rdf:resource="&base;FanAssembly"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;bb5"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;fa6">
+		<rdf:type rdf:resource="&base;FanAssembly"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;bb6"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;fa7">
+		<rdf:type rdf:resource="&base;FanAssembly"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;bb7"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;fa8">
+		<rdf:type rdf:resource="&base;FanAssembly"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;bb8"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;fa9">
+		<rdf:type rdf:resource="&base;FanAssembly"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;je1">
+		<rdf:type rdf:resource="&base;JetEngine"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;c1"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;fa1"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;t1"/>
+		<iof-core:hasQuality rdf:resource="&base;th0"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;je10">
+		<rdf:type rdf:resource="&base;JetEngine"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;c10"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;fa10"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;t10"/>
+		<iof-core:hasQuality rdf:resource="&base;th9"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;je2">
+		<rdf:type rdf:resource="&base;JetEngine"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;c2"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;fa2"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;t2"/>
+		<iof-core:hasQuality rdf:resource="&base;th1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;je3">
+		<rdf:type rdf:resource="&base;JetEngine"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;fa3"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;t3"/>
+		<iof-core:hasQuality rdf:resource="&base;th2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;je4">
+		<rdf:type rdf:resource="&base;JetEngine"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;c4"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;t4"/>
+		<iof-core:hasQuality rdf:resource="&base;th3"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;je5">
+		<rdf:type rdf:resource="&base;JetEngine"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;c5"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;fa5"/>
+		<iof-core:hasQuality rdf:resource="&base;th4"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;je6">
+		<rdf:type rdf:resource="&base;JetEngine"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;c6"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;fa6"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;t6"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;je7">
+		<rdf:type rdf:resource="&base;JetEngine"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;c7"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;fa7"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;t7"/>
+		<iof-core:hasQuality rdf:resource="&base;th6"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;je8">
+		<rdf:type rdf:resource="&base;JetEngine"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;fa8"/>
+		<iof-core:hasQuality rdf:resource="&base;th7"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;je9">
+		<rdf:type rdf:resource="&base;JetEngine"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;c9"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;fa9"/>
+		<iof-core:hasComponentPartAtSomeTime rdf:resource="&base;t9"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;lo0">
+		<rdf:type rdf:resource="&base;LoadRating"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;loadve0"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;lo1">
+		<rdf:type rdf:resource="&base;LoadRating"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;loadve1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;lo4">
+		<rdf:type rdf:resource="&base;LoadRating"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;loadve4"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;lo5">
+		<rdf:type rdf:resource="&base;LoadRating"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;loadve5"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;lo6">
+		<rdf:type rdf:resource="&base;LoadRating"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;loadve6"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;lo7">
+		<rdf:type rdf:resource="&base;LoadRating"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;loadve7"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;lo9">
+		<rdf:type rdf:resource="&base;LoadRating"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;loadve9"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;loadve0">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">0.915</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;loadve1">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">0.903</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;loadve4">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">0.915</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;loadve5">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">0.904</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;loadve6">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">0.916</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;loadve7">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">0.911</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;loadve9">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">0.914</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;t1">
+		<rdf:type rdf:resource="&base;Turbine"/>
+		<iof-core:hasQuality rdf:resource="&base;di0"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;t10">
+		<rdf:type rdf:resource="&base;Turbine"/>
+		<iof-core:hasQuality rdf:resource="&base;di9"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;t2">
+		<rdf:type rdf:resource="&base;Turbine"/>
+		<iof-core:hasQuality rdf:resource="&base;di1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;t3">
+		<rdf:type rdf:resource="&base;Turbine"/>
+		<iof-core:hasQuality rdf:resource="&base;di2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;t4">
+		<rdf:type rdf:resource="&base;Turbine"/>
+		<iof-core:hasQuality rdf:resource="&base;di3"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;t6">
+		<rdf:type rdf:resource="&base;Turbine"/>
+		<iof-core:hasQuality rdf:resource="&base;di5"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;t7">
+		<rdf:type rdf:resource="&base;Turbine"/>
+		<iof-core:hasQuality rdf:resource="&base;di6"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;t9">
+		<rdf:type rdf:resource="&base;Turbine"/>
+		<iof-core:hasQuality rdf:resource="&base;di8"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;th0">
+		<rdf:type rdf:resource="&base;Thrust"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;thrustve0"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;th1">
+		<rdf:type rdf:resource="&base;Thrust"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;thrustve1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;th2">
+		<rdf:type rdf:resource="&base;Thrust"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;thrustve2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;th3">
+		<rdf:type rdf:resource="&base;Thrust"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;thrustve3"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;th4">
+		<rdf:type rdf:resource="&base;Thrust"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;thrustve4"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;th5">
+		<rdf:type rdf:resource="&base;Thrust"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;thrustve5"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;th6">
+		<rdf:type rdf:resource="&base;Thrust"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;thrustve6"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;th7">
+		<rdf:type rdf:resource="&base;Thrust"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;thrustve7"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;th8">
+		<rdf:type rdf:resource="&base;Thrust"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;thrustve8"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;th9">
+		<rdf:type rdf:resource="&base;Thrust"/>
+		<iof-core:hasValueExpressionAtAllTimes rdf:resource="&base;thrustve9"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;thrustve0">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">695.5</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;thrustve1">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">697.7</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;thrustve2">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">696.0</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;thrustve3">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">702.3</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;thrustve4">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">692.8</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;thrustve5">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">707.9</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;thrustve6">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">708.1</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;thrustve7">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">699.5</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;thrustve8">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">705.9</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&base;thrustve9">
+		<iof-core:hasSimpleExpressionValue rdf:datatype="&xsd;float">700.2</iof-core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-2ed-cr/je-DS1">
+		<cr:prescribesActualEntity rdf:resource="&base;je1"/>
+		<cr:prescribesActualEntity rdf:resource="&base;je10"/>
+		<cr:prescribesActualEntity rdf:resource="&base;je2"/>
+		<cr:prescribesActualEntity rdf:resource="&base;je3"/>
+		<cr:prescribesActualEntity rdf:resource="&base;je4"/>
+		<cr:prescribesActualEntity rdf:resource="&base;je5"/>
+		<cr:prescribesActualEntity rdf:resource="&base;je6"/>
+		<cr:prescribesActualEntity rdf:resource="&base;je7"/>
+		<cr:prescribesActualEntity rdf:resource="&base;je8"/>
+		<cr:prescribesActualEntity rdf:resource="&base;je9"/>
+	</rdf:Description>
+
+</rdf:RDF>
