@@ -1,0 +1,59 @@
+#Get an updte cr (import) file to be able to run the code (1) --> New Version terms. Produced Matches to pdf.
+# Use(2) if does not want to redo it.
+
+
+#(1)What is the difference of real engine thrust and designed engine thrust? 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX jeb: <http://simpom.ohio.edu/examples/jet-engine-Base/>
+PREFIX jecr: <http://simpom.ohio.edu/examples/jet-engine-cr/>
+PREFIX cr: <http://simpom.ohio.edu/ontology/cr/>
+SELECT ?engine ?realThrustValue ?designThrustValue ?difference
+WHERE { 
+# find engine and its thrust 
+?engine rdf:type jeb:JetEngine.
+ ?spec cr:prescribesProducedEntity ?engine.
+?engine core:hasQuality ?thrust.
+# find the thrust value 
+?thrust core:hasValueExpressionAtAllTimes ?thrustValueExpr.
+?thrustValueExpr core:hasSimpleExpressionValue ?realThrustValue.
+# find the engine design from associated spec 
+?spec cr:prescribesDesignedEntity ?engdesign.
+?engdesign core:hasQuality ?thrustdesign.
+# find design thrust value 
+?thrustdesign core:hasValueExpressionAtAllTimes ?thrustDesignValueExpr.
+?thrustDesignValueExpr jeb:hasLowerBoundValue ?designThrustValue.
+# compare them 
+BIND((?realThrustValue - ?designThrustValue) as ?difference) 
+ } 
+
+#(2)What is the difference of real engine thrust and designed engine thrust? 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX jeb: <http://simpom.ohio.edu/examples/jet-engine-Base/>
+PREFIX jecr: <http://simpom.ohio.edu/examples/jet-engine-cr/>
+PREFIX cr: <http://simpom.ohio.edu/ontology/cr/>
+SELECT ?engine ?realThrustValue ?designThrustValue ?difference
+WHERE { 
+# find engine and its thrust 
+?engine rdf:type jeb:JetEngine.
+ ?spec cr:prescribesAutualEntity ?engine.
+?engine core:hasQuality ?thrust.
+# find the thrust value 
+?thrust core:hasValueExpressionAtAllTimes ?thrustValueExpr.
+?thrustValueExpr core:hasSimpleExpressionValue ?realThrustValue.
+# find the engine design from associated spec 
+?spec cr:prescribesDesignedEntity ?engdesign.
+?engdesign core:hasQuality ?thrustdesign.
+# find design thrust value 
+?thrustdesign core:hasValueExpressionAtAllTimes ?thrustDesignValueExpr.
+?thrustDesignValueExpr jeb:hasLowerBoundValue ?designThrustValue.
+# compare them 
+BIND((?realThrustValue - ?designThrustValue) as ?difference) 
+ }
