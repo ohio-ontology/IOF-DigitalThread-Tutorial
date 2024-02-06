@@ -15,3 +15,30 @@
 > [!IMPORTANT]
 > There are multiple items but make sure you have these three items, as shown in the image below. (folders: examples, ontologies, and a file: iof-digital-thread-tutorial)
 > ![Screenshot 2024-02-05 223809](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/a4097274-f461-4558-b6aa-1b9bf4eea5bc)
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX core: <https://spec.industrialontologies.org/ontology/core/Core/>
+PREFIX jeb: <http://simpom.ohio.edu/examples/jet-engine-Base/>
+PREFIX jecr: <http://simpom.ohio.edu/examples/jet-engine-cr/>
+PREFIX cr: <http://simpom.ohio.edu/ontology/cr/>
+SELECT ?engine ?realThrustValue ?designThrustValue ?difference
+WHERE { 
+# find engine and its thrust 
+?engine rdf:type jeb:JetEngine.
+ ?spec cr:prescribesProducedEntity ?engine.
+?engine core:hasQuality ?thrust.
+# find the thrust value 
+?thrust core:hasValueExpressionAtAllTimes ?thrustValueExpr.
+?thrustValueExpr core:hasSimpleExpressionValue ?realThrustValue.
+# find the engine design from associated spec 
+?spec cr:prescribesDesignedEntity ?engdesign.
+?engdesign core:hasQuality ?thrustdesign.
+# find design thrust value 
+?thrustdesign core:hasValueExpressionAtAllTimes ?thrustDesignValueExpr.
+?thrustDesignValueExpr jeb:hasLowerBoundValue ?designThrustValue.
+# compare them 
+BIND((?realThrustValue - ?designThrustValue) as ?difference)}
