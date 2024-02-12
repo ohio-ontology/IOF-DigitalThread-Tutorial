@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY AnnotationVocabulary "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+	<!ENTITY Core "https://spec.industrialontologies.org/ontology/core/Core/">
+	<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY terms "http://purl.org/dc/terms/">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="htps://simpom.ohio.edu/example/jet-engine/jet-engine-base/"
+	xmlns="http://www.semanticweb.org/sormaz/ontologies/2024/1/untitled-ontology-11/"
+	xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+	xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:terms="http://purl.org/dc/terms/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="htps://simpom.ohio.edu/example/jet-engine/jet-engine-base/">
+		<owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/202301/core/Core/"/>
+	</owl:Ontology>
+	
+	<owl:Class rdf:about="htps://simpom.ohio.edu/example/jet-engine/jet-engine-base/#Compressor">
+		<rdfs:subClassOf rdf:resource="&Core;Assembly"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="htps://simpom.ohio.edu/example/jet-engine/jet-engine-base/#JetEngine">
+		<rdfs:subClassOf rdf:resource="&Core;Assembly"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="htps://simpom.ohio.edu/example/jet-engine/jet-engine-base/Thrust">
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+	</owl:Class>
+	
+	<owl:NamedIndividual rdf:about="htps://simpom.ohio.edu/example/jet-engine/jet-engine-base/c1">
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="htps://simpom.ohio.edu/example/jet-engine/jet-engine-base/je1">
+		<rdf:type rdf:resource="htps://simpom.ohio.edu/example/jet-engine/jet-engine-base/#JetEngine"/>
+		<Core:hasQuality rdf:resource="htps://simpom.ohio.edu/example/jet-engine/jet-engine-base/th1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="htps://simpom.ohio.edu/example/jet-engine/jet-engine-base/je2">
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="htps://simpom.ohio.edu/example/jet-engine/jet-engine-base/th1">
+		<rdf:type rdf:resource="htps://simpom.ohio.edu/example/jet-engine/jet-engine-base/Thrust"/>
+	</owl:NamedIndividual>
+
+</rdf:RDF>
