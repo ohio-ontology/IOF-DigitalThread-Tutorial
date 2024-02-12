@@ -15,3 +15,4 @@
 > [!IMPORTANT]
 > There are multiple items but make sure you have these three items, as shown in the image below. (folders: examples, ontologies, and a file: iof-digital-thread-tutorial)
 > ![Screenshot 2024-02-05 223809](https://github.com/ohio-ontology/IOF-DigitalThread-Tutorial/assets/60668676/a4097274-f461-4558-b6aa-1b9bf4eea5bc)
+
