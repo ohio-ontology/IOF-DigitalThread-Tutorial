@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY AnnotationVocabulary "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+	<!ENTITY Core "https://spec.industrialontologies.org/ontology/core/Core/">
+	<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+	<!ENTITY jet-engine-2ed-base "http://simpom.ohio.edu/examples/jet-engine-2ed-base/">
+	<!ENTITY jet-engine-base "http://simpom.ohio.edu/examples/jet-engine-base/">
+	<!ENTITY jet-engine-base-2ed "http://simpom.ohio.edu/examples/jet-engine-base-2ed/">
+	<!ENTITY obo "http://purl.obolibrary.org/obo/">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY terms "http://purl.org/dc/terms/">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="http://simpom.ohio.edu/examples/jet-engine-2ed-base/"
+	xmlns="http://www.semanticweb.org/sormaz/ontologies/2023/1/untitled-ontology-112#"
+	xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+	xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:jet-engine-2ed-base="http://simpom.ohio.edu/examples/jet-engine-2ed-base/"
+	xmlns:jet-engine-base="http://simpom.ohio.edu/examples/jet-engine-base/"
+	xmlns:jet-engine-base-2ed="http://simpom.ohio.edu/examples/jet-engine-base-2ed/"
+	xmlns:obo="http://purl.obolibrary.org/obo/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:terms="http://purl.org/dc/terms/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="http://simpom.ohio.edu/examples/jet-engine-2ed-base/">
+		<rdfs:comment xml:lang="en">This is an ontology of Jet Engine(s) which
+
+has required components:
+    compressor
+    turbine
+    &apos;fan assembly&apos;
+       &apos;ball bearing&apos;
+
+has required quality/capability
+     thrust at minimum of 700 kN
+     &apos;load rating&apos; at minimum of 0.915 kN
+     diameter of Turbine 48 inches with tolerance of +- 0.05 inches</rdfs:comment>
+		<owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/"/>
+	</owl:Ontology>
+	
+	<owl:AnnotationProperty rdf:about="&dc;creator">
+	</owl:AnnotationProperty>
+	
+	<owl:AnnotationProperty rdf:about="&dc;date">
+	</owl:AnnotationProperty>
+	
+	<owl:Class rdf:about="&jet-engine-2ed-base;BallBearing">
+		<rdfs:subClassOf rdf:resource="&Core;MaterialArtifact"/>
+		<rdfs:label xml:lang="en">ball bearing</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&jet-engine-2ed-base;Compressor">
+		<rdfs:subClassOf rdf:resource="&Core;MaterialArtifact"/>
+		<rdfs:label xml:lang="en">compressor</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&jet-engine-2ed-base;Diameter">
+		<rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+		<rdfs:label xml:lang="en">diameter</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&jet-engine-2ed-base;FanAssembly">
+		<rdfs:subClassOf rdf:resource="&Core;Assembly"/>
+		<rdfs:label xml:lang="en">fan assembly</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&jet-engine-2ed-base;JetEngine">
+		<rdfs:subClassOf rdf:resource="&Core;MaterialArtifact"/>
+		<rdfs:label xml:lang="en">jet engine</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&jet-engine-2ed-base;LoadRating">
+		<rdfs:subClassOf rdf:resource="&Core;Capability"/>
+		<rdfs:label xml:lang="en">load rating</rdfs:label>
+		<terms:description xml:lang="en">static load rating (C zero) in product listings indicates the maximum non-rotating radial load a bearing can handle without damage. It considers forces during assembly, testing, and impact loads during handling and shipment.</terms:description>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&jet-engine-2ed-base;Thrust">
+		<rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+		<rdfs:label xml:lang="en">thrust</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&jet-engine-2ed-base;Turbine">
+		<rdfs:subClassOf rdf:resource="&Core;MaterialArtifact"/>
+		<rdfs:label xml:lang="en">turbine</rdfs:label>
+	</owl:Class>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;a1">
+		<rdf:type rdf:resource="&Core;MaterialArtifact"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;a2">
+		<rdf:type rdf:resource="&Core;MaterialArtifact"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;bb1">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;BallBearing"/>
+		<Core:hasCapability rdf:resource="&jet-engine-2ed-base;loadR1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;bb2">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;BallBearing"/>
+		<Core:hasCapability rdf:resource="&jet-engine-2ed-base;loadR2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;bb3">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;BallBearing"/>
+		<Core:hasCapability rdf:resource="&jet-engine-2ed-base;loadR3"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;bb4">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;BallBearing"/>
+		<Core:hasCapability rdf:resource="&jet-engine-2ed-base;loadR4"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;c1">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Compressor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;c2">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Compressor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;c3">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Compressor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;c4">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Compressor"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;dia-tu-DSValueExpr">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<jet-engine-2ed-base:hasLowerBoundValue rdf:datatype="&xsd;decimal">47.95</jet-engine-2ed-base:hasLowerBoundValue>
+		<jet-engine-2ed-base:hasUpperBoundValue rdf:datatype="&xsd;decimal">48.05</jet-engine-2ed-base:hasUpperBoundValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;dia1">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Diameter"/>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-2ed-base;dia1ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;dia1ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;decimal">48.01</Core:hasSimpleExpressionValue>
+		<AnnotationVocabulary:usageNote xml:lang="en">unit is in feet</AnnotationVocabulary:usageNote>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;dia2">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Diameter"/>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-2ed-base;dia2ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;dia2ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;decimal">48.00</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;dia3">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Diameter"/>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-2ed-base;dia3ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;dia3ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;decimal">47.90</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;dia4">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Diameter"/>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-2ed-base;dia4ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;dia4ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;decimal">48.04</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;fanA1">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;FanAssembly"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;bb1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;fanA2">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;FanAssembly"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;bb2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;fanA3">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;FanAssembly"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;bb3"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;fanA4">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;FanAssembly"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;bb4"/>
+	</owl:NamedIndividual>
+	
+	<owl:DatatypeProperty rdf:about="&jet-engine-2ed-base;hasLowerBoundValue">
+		<rdfs:subPropertyOf rdf:resource="&Core;hasSimpleExpressionValue"/>
+		<rdfs:label>has lower bound value</rdfs:label>
+	</owl:DatatypeProperty>
+	
+	<owl:DatatypeProperty rdf:about="&jet-engine-2ed-base;hasUpperBoundValue">
+		<rdfs:subPropertyOf rdf:resource="&Core;hasSimpleExpressionValue"/>
+		<rdfs:label xml:lang="en">has upper bound value</rdfs:label>
+	</owl:DatatypeProperty>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;je1-satisfied">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;JetEngine"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;c1"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;fanA1"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;tu1"/>
+		<Core:hasQuality rdf:resource="&jet-engine-2ed-base;th1-710"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;je2-extra-artifact">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;JetEngine"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;a2"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;c2"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;fanA2"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;tu2"/>
+		<Core:hasQuality rdf:resource="&jet-engine-2ed-base;th2-690"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;je3-no-turbine">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;JetEngine"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;c3"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;fanA3"/>
+		<Core:hasQuality rdf:resource="&jet-engine-2ed-base;th3-670"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;je4-no-comp-extra-artifact">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;JetEngine"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;a1"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;fanA4"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-2ed-base;tu4"/>
+		<Core:hasQuality rdf:resource="&jet-engine-2ed-base;th4-720"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;loadR-DSValueExpr">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<jet-engine-2ed-base:hasLowerBoundValue rdf:datatype="&xsd;decimal">0.915</jet-engine-2ed-base:hasLowerBoundValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;loadR1">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;LoadRating"/>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-2ed-base;loadR1ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;loadR1ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;decimal">0.918</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;loadR2">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;LoadRating"/>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-2ed-base;loadR2ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;loadR2ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;decimal">0.897</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;loadR3">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;LoadRating"/>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-2ed-base;loadR3ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;loadR3ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;decimal">0.928</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;loadR4">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;LoadRating"/>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-2ed-base;loadR4ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;loadR4ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;decimal">0.940</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;th-DSValueExpr">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<jet-engine-2ed-base:hasLowerBoundValue rdf:datatype="&xsd;decimal">700</jet-engine-2ed-base:hasLowerBoundValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;th1-710">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Thrust"/>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-2ed-base;th1ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;th1ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;integer">710</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;th2-690">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Thrust"/>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-2ed-base;th2ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;th2ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;integer">690</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;th3-670">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Thrust"/>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-2ed-base;th3ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;th3ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;integer">670</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;th4-720">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Thrust"/>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="&jet-engine-2ed-base;th4ValueExp"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;th4ValueExp">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;integer">720</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;tu1">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Turbine"/>
+		<Core:hasQuality rdf:resource="&jet-engine-2ed-base;dia1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;tu2">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Turbine"/>
+		<Core:hasQuality rdf:resource="&jet-engine-2ed-base;dia2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;tu3">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Turbine"/>
+		<Core:hasQuality rdf:resource="&jet-engine-2ed-base;dia3"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&jet-engine-2ed-base;tu4">
+		<rdf:type rdf:resource="&jet-engine-2ed-base;Turbine"/>
+		<Core:hasQuality rdf:resource="&jet-engine-2ed-base;dia4"/>
+	</owl:NamedIndividual>
+
+</rdf:RDF>
