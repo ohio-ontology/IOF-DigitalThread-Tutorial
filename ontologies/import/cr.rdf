@@ -1,122 +1,251 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://simpom.ohio.edu/ontology/cr/"
-     xml:base="http://simpom.ohio.edu/ontology/cr/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
-    <owl:Ontology rdf:about="http://simpom.ohio.edu/ontology/cr/"/>
-    
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY AnnotationVocabulary "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+	<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY terms "http://purl.org/dc/terms/">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="http://simpom.ohio.edu/ontology/cr/"
+	xmlns="http://simpom.ohio.edu/ontology/cr/"
+	xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:terms="http://purl.org/dc/terms/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="http://simpom.ohio.edu/ontology/cr/">
+		<owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/202401/core/Core/"/>
+	</owl:Ontology>
+	
+	<owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003">
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+	</owl:Class>
+	
+	<owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000117">
+	</owl:ObjectProperty>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/ontology/cr/Design">
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+				<owl:allValuesFrom rdf:resource="http://simpom.ohio.edu/ontology/cr/Design"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime"/>
+				<owl:allValuesFrom rdf:resource="http://simpom.ohio.edu/ontology/cr/Design"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<owl:disjointWith rdf:resource="http://simpom.ohio.edu/ontology/cr/ProducedArtifact"/>
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+					</rdf:Description>
+					<owl:Restriction>
+						<owl:onProperty>
+							<rdf:Description>
+								<owl:inverseOf rdf:resource="http://simpom.ohio.edu/ontology/cr/prescribesDesignedEntity"/>
+							</rdf:Description>
+						</owl:onProperty>
+						<owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/DesignSpecification"/>
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+		<AnnotationVocabulary:naturalLanguageDefinition>abc</AnnotationVocabulary:naturalLanguageDefinition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/ontology/cr/ProcessDesign">
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess">
+					</rdf:Description>
+					<owl:Restriction>
+						<owl:onProperty>
+							<rdf:Description>
+								<owl:inverseOf rdf:resource="http://simpom.ohio.edu/ontology/cr/prescribesPlannedEntity"/>
+							</rdf:Description>
+						</owl:onProperty>
+						<owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+		<skos:note>Process design
 
+Design Process</skos:note>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/ontology/cr/ProducedArtifact">
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/componentPartOfAtSomeTime"/>
+				<owl:allValuesFrom rdf:resource="http://simpom.ohio.edu/ontology/cr/ProducedArtifact"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime"/>
+				<owl:allValuesFrom rdf:resource="http://simpom.ohio.edu/ontology/cr/ProducedArtifact"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+					</rdf:Description>
+					<owl:Restriction>
+						<owl:onProperty>
+							<rdf:Description>
+								<owl:inverseOf rdf:resource="http://simpom.ohio.edu/ontology/cr/prescribesActualEntity"/>
+							</rdf:Description>
+						</owl:onProperty>
+						<owl:someValuesFrom rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/DesignSpecification"/>
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/hasCounterpart">
+		<rdfs:comment>hasCorrespondent</rdfs:comment>
+		<owl:inverseOf rdf:resource="http://simpom.ohio.edu/ontology/cr/isCounterpartOf"/>
+		<AnnotationVocabulary:naturalLanguageDefinition></AnnotationVocabulary:naturalLanguageDefinition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/isCounterpartOf">
+		<rdfs:comment>correspondsTo
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+congruent 
 
-    
+synonyms
 
+accordant
+coherent
+compatible
+concordant
+conformable (to)
+congruous
+consistent
+consonant
+correspondent (with or to)
+harmonious
+nonconflicting</rdfs:comment>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesActualArtifact">
+		<rdfs:subPropertyOf rdf:resource="http://simpom.ohio.edu/ontology/cr/prescribesActualEntity"/>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesActualEntity">
+		<rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+		<rdfs:label xml:lang="en-us">prescribes actual entity</rdfs:label>
+		<rdfs:range rdf:resource="http://simpom.ohio.edu/ontology/cr/ProducedArtifact"/>
+		<AnnotationVocabulary:naturalLanguageDefinition xml:lang="en-us">relation from an information content entity to an entity such that information content entity prescribes entity which exists in its physical or natural environment (world)</AnnotationVocabulary:naturalLanguageDefinition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesActualICE">
+		<rdfs:subPropertyOf rdf:resource="http://simpom.ohio.edu/ontology/cr/prescribesActualEntity"/>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesActualProcess">
+		<rdfs:subPropertyOf rdf:resource="http://simpom.ohio.edu/ontology/cr/prescribesActualEntity"/>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesActualQuality">
+		<rdfs:subPropertyOf rdf:resource="http://simpom.ohio.edu/ontology/cr/prescribesActualEntity"/>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesDesignQuality">
+		<rdfs:subPropertyOf rdf:resource="http://simpom.ohio.edu/ontology/cr/prescribesDesignedEntity"/>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesDesignedEntity">
+		<rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+		<rdfs:label xml:lang="en-us">prescribes designed entity</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://simpom.ohio.edu/ontology/cr"/>
+		<rdfs:range rdf:resource="http://simpom.ohio.edu/ontology/cr/Design"/>
+		<owl:propertyChainAxiom rdf:parseType="Collection">
+			<rdf:Description rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesDesignedEntity">
+			</rdf:Description>
+			<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/hasQuality">
+			</rdf:Description>
+		</owl:propertyChainAxiom>
+		<skos:example xml:lang="en-us">CAD Model prescribes a design the an engine, blueprint prescribes dimensions of a shaft</skos:example>
+		<AnnotationVocabulary:naturalLanguageDefinition xml:lang="en-us">relation from an information content entity to an entity such that the  information content entity prescribes entity which does not exist, but is result (output) of a design process and may exist in future</AnnotationVocabulary:naturalLanguageDefinition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesPlannedEntity">
+		<rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+		<rdfs:label xml:lang="en-us">prescribes planned entity</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://simpom.ohio.edu/ontology/cr"/>
+		<owl:propertyChainAxiom rdf:parseType="Collection">
+			<rdf:Description rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesPlannedEntity">
+			</rdf:Description>
+			<rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000117">
+			</rdf:Description>
+		</owl:propertyChainAxiom>
+		<owl:propertyChainAxiom rdf:parseType="Collection">
+			<rdf:Description rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesPlannedEntity">
+			</rdf:Description>
+			<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/hasProcessCharacteristic">
+			</rdf:Description>
+		</owl:propertyChainAxiom>
+		<skos:example xml:lang="en-us">drawing prescribes a car whicih is currebntly in production. IKEA instruction prescribe componentsof a tabel that I bought yesterday</skos:example>
+		<AnnotationVocabulary:naturalLanguageDefinition xml:lang="en-us">relation from an information content entity to an entity such that the  information content entity prescribes entity which exist currently n its prescribes entity (occurrent) which does not exist, but is result (output) of a planning  process and it may unfold in time in future</AnnotationVocabulary:naturalLanguageDefinition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesRequiredEntity">
+		<rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
+	</owl:ObjectProperty>
+	
+	<owl:AnnotationProperty rdf:about="&skos;example">
+	</owl:AnnotationProperty>
+	
+	<owl:AnnotationProperty rdf:about="&skos;note">
+	</owl:AnnotationProperty>
+	
+	<owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/DesignSpecification">
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/PlanSpecification">
+	</owl:Class>
+	
+	<owl:ObjectProperty rdf:about="https://spec.industrialontologies.org/ontology/core/Core/hasProcessCharacteristic">
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="https://spec.industrialontologies.org/ontology/core/Core/hasQuality">
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="https://spec.industrialontologies.org/ontology/core/Core/prescribes">
+		<owl:propertyChainAxiom rdf:parseType="Collection">
+			<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/prescribes">
+			</rdf:Description>
+			<rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/hasQuality">
+			</rdf:Description>
+		</owl:propertyChainAxiom>
+	</owl:ObjectProperty>
+	
+	<owl:AnnotationProperty rdf:about="&AnnotationVocabulary;naturalLanguageDefinition">
+	</owl:AnnotationProperty>
 
-    <!-- http://simpom.ohio.edu/ontology/cr/hasCounterpart -->
-
-    <owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/hasCounterpart">
-        <owl:inverseOf rdf:resource="http://simpom.ohio.edu/ontology/cr/isCounterpartOf"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://simpom.ohio.edu/ontology/cr/isCounterpartOf -->
-
-    <owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/isCounterpartOf"/>
-    
-
-
-    <!-- http://simpom.ohio.edu/ontology/cr/prescribesDesignQuality -->
-
-    <owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesDesignQuality">
-        <rdfs:subPropertyOf rdf:resource="http://simpom.ohio.edu/ontology/cr/prescribesDesignedEntity"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://simpom.ohio.edu/ontology/cr/prescribesDesignedEntity -->
-
-    <owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesDesignedEntity">
-        <rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://simpom.ohio.edu/ontology/cr/prescribesPlannedEntity -->
-
-    <owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesPlannedEntity">
-        <rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://simpom.ohio.edu/ontology/cr/prescribesProducedArtifact -->
-
-    <owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesProducedArtifact">
-        <rdfs:subPropertyOf rdf:resource="http://simpom.ohio.edu/ontology/cr/prescribesProducedEntity"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://simpom.ohio.edu/ontology/cr/prescribesProducedEntity -->
-
-    <owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesProducedEntity">
-        <rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://simpom.ohio.edu/ontology/cr/prescribesProducedICE -->
-
-    <owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesProducedICE">
-        <rdfs:subPropertyOf rdf:resource="http://simpom.ohio.edu/ontology/cr/prescribesProducedEntity"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://simpom.ohio.edu/ontology/cr/prescribesProducedProcess -->
-
-    <owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesProducedProcess">
-        <rdfs:subPropertyOf rdf:resource="http://simpom.ohio.edu/ontology/cr/prescribesProducedEntity"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://simpom.ohio.edu/ontology/cr/prescribesProducedQuality -->
-
-    <owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesProducedQuality">
-        <rdfs:subPropertyOf rdf:resource="http://simpom.ohio.edu/ontology/cr/prescribesProducedEntity"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://simpom.ohio.edu/ontology/cr/prescribesRequiredEntity -->
-
-    <owl:ObjectProperty rdf:about="http://simpom.ohio.edu/ontology/cr/prescribesRequiredEntity">
-        <rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://spec.industrialontologies.org/ontology/core/Core/prescribes -->
-
-    <owl:ObjectProperty rdf:about="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
 </rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
