@@ -107,6 +107,18 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/JetEngine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/jimJetSpec1"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -192,6 +204,14 @@
         <rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/JetEngine"/>
         <Core:hasComponentPartAtSomeTime rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/turbine1"/>
         <Core:hasQuality rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/thrust1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://nomagic.com/ontologies/jlogan/2024/JimJet/jimJetSpec1 -->
+
+    <owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/jimJetSpec1">
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/DesignSpecification"/>
     </owl:NamedIndividual>
     
 
