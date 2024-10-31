@@ -12,7 +12,7 @@
 	<!ENTITY terms "http://purl.org/dc/terms/">
 	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
 ]>
-<rdf:RDF xml:base="http://simpom.ohio.edu/examples/jet-engine-CR/"
+<rdf:RDF xml:base="http://simpom.ohio.edu/examples/jet-engine-cr/"
 	xmlns="http://simpom.ohio.edu/examples/jet-engine-cr/"
 	xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
 	xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
@@ -26,93 +26,72 @@
 	xmlns:terms="http://purl.org/dc/terms/"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	
-	<owl:Ontology rdf:about="http://simpom.ohio.edu/examples/jet-engine-CR/">
-		<rdfs:comment xml:lang="en">CR stands for Conterpart Relation</rdfs:comment>
-		<rdfs:comment xml:lang="en">Imported &quot;jet-engine-Base&quot; and &quot;cr&quot; rdf file.</rdfs:comment>
-		<owl:imports rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/"/>
+	<owl:Ontology rdf:about="http://simpom.ohio.edu/examples/jet-engine-cr/">
+		<rdfs:comment xml:lang="en">Imported &quot;jet-engine-base&quot;</rdfs:comment>
+		<owl:imports rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/"/>
 		<owl:imports rdf:resource="http://simpom.ohio.edu/ontology/cr/"/>
 	</owl:Ontology>
 	
-	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/c1">
-		<cr:isCounterpartOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/c-d1"/>
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/jet-engine-base#Compressor">
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/jet-engine-base#thrust">
+	</owl:Class>
+	
+	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-base/c1">
+		<cr:isCounterpartOf rdf:resource="&jet-engine-cr;c1-d"/>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/c2">
-		<cr:isCounterpartOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/c-d1"/>
+	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-base/c2">
+		<cr:isCounterpartOf rdf:resource="&jet-engine-cr;c1-d"/>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/je1">
-		<cr:isCounterpartOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/je-d1"/>
+	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-base/je1">
+		<cr:isCounterpartOf rdf:resource="&jet-engine-cr;je1-d"/>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/je2">
-		<cr:isCounterpartOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/je-d1"/>
+	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-base/je2">
+		<cr:isCounterpartOf rdf:resource="&jet-engine-cr;je1-d"/>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/je3">
-		<cr:isCounterpartOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/je-d1"/>
+	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-base/je3">
+		<cr:isCounterpartOf rdf:resource="&jet-engine-cr;je1-d"/>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/je4">
-		<cr:isCounterpartOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/je-d1"/>
+	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-base/je4">
+		<cr:isCounterpartOf rdf:resource="&jet-engine-cr;je1-d"/>
 	</rdf:Description>
 	
-	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/th1-710">
-		<cr:isCounterpartOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/th-d1"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/th2-690">
-		<cr:isCounterpartOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/th-d1"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/th3-670">
-		<cr:isCounterpartOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/th-d1"/>
-	</rdf:Description>
-	
-	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/th4-720">
-		<cr:isCounterpartOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/th-d1"/>
-	</rdf:Description>
-	
-	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/jet-engine-CR/c-DS1">
+	<owl:NamedIndividual rdf:about="&jet-engine-cr;c1-DS">
 		<rdf:type rdf:resource="&Core;DesignSpecification"/>
-		<cr:prescribesActualEntity rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/c1"/>
-		<cr:prescribesActualEntity rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/c2"/>
-		<cr:prescribesDesignedEntity rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/c-d1"/>
+		<cr:prescribesActualEntity rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/c1"/>
+		<cr:prescribesActualEntity rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/c2"/>
+		<cr:prescribesDesignedEntity rdf:resource="&jet-engine-cr;c1-d"/>
 	</owl:NamedIndividual>
 	
-	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/jet-engine-CR/c-d1">
-		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/Compressor"/>
+	<owl:NamedIndividual rdf:about="&jet-engine-cr;c1-d">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/Compressor"/>
+		<Core:componentPartOfAtSomeTime rdf:resource="&jet-engine-cr;je1-d"/>
 	</owl:NamedIndividual>
 	
-	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/jet-engine-CR/je-DS1">
+	<owl:NamedIndividual rdf:about="&jet-engine-cr;je1-DS">
 		<rdf:type rdf:resource="&Core;DesignSpecification"/>
-		<cr:prescribesActualEntity rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/je1"/>
-		<cr:prescribesActualEntity rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/je2"/>
-		<cr:prescribesActualEntity rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/je3"/>
-		<cr:prescribesActualEntity rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/je4"/>
-		<cr:prescribesDesignedEntity rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/je-d1"/>
+		<cr:prescribesActualEntity rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/je1"/>
+		<cr:prescribesActualEntity rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/je2"/>
+		<cr:prescribesActualEntity rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/je3"/>
+		<cr:prescribesActualEntity rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/je4"/>
+		<cr:prescribesDesignedEntity rdf:resource="&jet-engine-cr;je1-d"/>
 	</owl:NamedIndividual>
 	
-	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/jet-engine-CR/je-d1">
-		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/JetEngine"/>
-		<Core:hasComponentPartAtSomeTime rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/c-d1"/>
-		<Core:hasQuality rdf:resource="http://simpom.ohio.edu/examples/jet-engine-CR/th-d1"/>
+	<owl:NamedIndividual rdf:about="&jet-engine-cr;je1-d">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/JetEngine"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="&jet-engine-cr;c1-d"/>
+		<Core:hasQuality rdf:resource="&jet-engine-cr;th1-d"/>
 	</owl:NamedIndividual>
 	
-	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/jet-engine-CR/th-d1">
-		<Core:hasValueExpressionAtAllTimes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/th-DSValueExpr"/>
+	<owl:NamedIndividual rdf:about="&jet-engine-cr;th1-d">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/thrust"/>
+		<Core:hasValueExpressionAtAllTimes rdf:resource="http://simpom.ohio.edu/examples/jet-engine-base/th-DSValueExpr"/>
 	</owl:NamedIndividual>
-	
-	<owl:AnnotationProperty rdf:about="&Core;componentPartOfAtSomeTime">
-	</owl:AnnotationProperty>
-	
-	<owl:AnnotationProperty rdf:about="&Core;hasComponentPartAtSomeTime">
-	</owl:AnnotationProperty>
-	
-	<owl:AnnotationProperty rdf:about="&Core;hasQuality">
-	</owl:AnnotationProperty>
-	
-	<owl:AnnotationProperty rdf:about="&Core;hasValueExpressionAtAllTimes">
-	</owl:AnnotationProperty>
 
 </rdf:RDF>

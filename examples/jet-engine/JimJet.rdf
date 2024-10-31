@@ -1,265 +1,294 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="https://nomagic.com/ontologies/jlogan/2024/JimJet/"
-     xml:base="https://nomagic.com/ontologies/jlogan/2024/JimJet/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:jll="https://nomagic.com/ontologies/jlogan/2024/untitled-ontology-241//"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
-    <owl:Ontology rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/">
-        <owl:imports rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/"/>
-    </owl:Ontology>
-    
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY AnnotationVocabulary "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+	<!ENTITY Core "https://spec.industrialontologies.org/ontology/core/Core/">
+	<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+	<!ENTITY jll "https://nomagic.com/ontologies/jlogan/2024/untitled-ontology-241//">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY terms "http://purl.org/dc/terms/">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="https://nomagic.com/ontologies/jlogan/2024/JimJet/"
+	xmlns="https://nomagic.com/ontologies/jlogan/2024/JimJet/"
+	xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+	xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:jll="https://nomagic.com/ontologies/jlogan/2024/untitled-ontology-241//"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:terms="http://purl.org/dc/terms/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/">
+		<owl:imports rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/"/>
+	</owl:Ontology>
+	
+	<owl:Class rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/Diameter">
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/JImClass">
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:oneOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/jimJetSpec1">
+					</rdf:Description>
+				</owl:oneOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/JetEngineDesignSpec">
+		<rdfs:subClassOf rdf:resource="&Core;DirectiveInformationContentEntity"/>
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="&Core;DesignSpecification">
+					</rdf:Description>
+					<owl:Restriction>
+						<owl:onProperty rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/satisfiedBy"/>
+						<owl:someValuesFrom rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/JimJetEngine"/>
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/JimD2">
+		<rdfs:subClassOf rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/Diameter"/>
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/Diameter">
+					</rdf:Description>
+					<owl:Restriction>
+						<owl:onProperty rdf:resource="&Core;hasMeasuredValueAtSomeTime"/>
+						<owl:someValuesFrom>
+							<owl:Class>
+								<owl:intersectionOf rdf:parseType="Collection">
+									<rdf:Description rdf:about="&Core;MeasuredValueExpression">
+									</rdf:Description>
+									<owl:Restriction>
+										<owl:onProperty rdf:resource="&Core;hasSimpleExpressionValue"/>
+										<owl:someValuesFrom>
+											<rdfs:Datatype>
+												<owl:onDatatype rdf:resource="&xsd;float"/>
+												<owl:withRestrictions rdf:parseType="Collection">
+													<rdf:Description>
+														<xsd:minExclusive rdf:datatype="&xsd;float">47.0</xsd:minExclusive>
+													</rdf:Description>
+													<rdf:Description>
+														<xsd:maxExclusive rdf:datatype="&xsd;float">48.5</xsd:maxExclusive>
+													</rdf:Description>
+												</owl:withRestrictions>
+											</rdfs:Datatype>
+										</owl:someValuesFrom>
+									</owl:Restriction>
+								</owl:intersectionOf>
+							</owl:Class>
+						</owl:someValuesFrom>
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/JimDiameter">
+		<rdfs:subClassOf rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/Diameter"/>
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/Diameter">
+					</rdf:Description>
+					<owl:Restriction>
+						<owl:onProperty rdf:resource="&Core;hasMeasuredValueAtSomeTime"/>
+						<owl:someValuesFrom>
+							<owl:Class>
+								<owl:intersectionOf rdf:parseType="Collection">
+									<rdf:Description rdf:about="&Core;MeasuredValueExpression">
+									</rdf:Description>
+									<owl:Restriction>
+										<owl:onProperty rdf:resource="&Core;hasSimpleExpressionValue"/>
+										<owl:someValuesFrom>
+											<rdfs:Datatype>
+												<owl:onDatatype rdf:resource="&xsd;float"/>
+												<owl:withRestrictions rdf:parseType="Collection">
+													<rdf:Description>
+														<xsd:minExclusive rdf:datatype="&xsd;float">47.9</xsd:minExclusive>
+													</rdf:Description>
+													<rdf:Description>
+														<xsd:maxExclusive rdf:datatype="&xsd;float">48.1</xsd:maxExclusive>
+													</rdf:Description>
+												</owl:withRestrictions>
+											</rdfs:Datatype>
+										</owl:someValuesFrom>
+									</owl:Restriction>
+								</owl:intersectionOf>
+							</owl:Class>
+						</owl:someValuesFrom>
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/JimJetEngine">
+		<rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/JetEngine"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/conformsTo"/>
+				<owl:allValuesFrom>
+					<owl:Class>
+						<owl:oneOf rdf:parseType="Collection">
+							<rdf:Description rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/jimJetSpec1">
+							</rdf:Description>
+						</owl:oneOf>
+					</owl:Class>
+				</owl:allValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/conformsTo"/>
+				<owl:someValuesFrom>
+					<owl:Class>
+						<owl:oneOf rdf:parseType="Collection">
+							<rdf:Description rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/jimJetSpec1">
+							</rdf:Description>
+						</owl:oneOf>
+					</owl:Class>
+				</owl:someValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/JetEngine">
+					</rdf:Description>
+					<owl:Restriction>
+						<owl:onProperty rdf:resource="&Core;hasComponentPartAtSomeTime"/>
+						<owl:someValuesFrom>
+							<owl:Class>
+								<owl:intersectionOf rdf:parseType="Collection">
+									<rdf:Description rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/Turbine">
+									</rdf:Description>
+									<owl:Restriction>
+										<owl:onProperty rdf:resource="&Core;hasQuality"/>
+										<owl:someValuesFrom rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/JimDiameter"/>
+									</owl:Restriction>
+								</owl:intersectionOf>
+							</owl:Class>
+						</owl:someValuesFrom>
+					</owl:Restriction>
+					<owl:Restriction>
+						<owl:onProperty rdf:resource="&Core;hasQuality"/>
+						<owl:someValuesFrom rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/JimThrust"/>
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/JimThrust">
+		<rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/Thrust"/>
+		<owl:equivalentClass>
+			<owl:Class>
+				<owl:intersectionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/Thrust">
+					</rdf:Description>
+					<owl:Restriction>
+						<owl:onProperty rdf:resource="&Core;hasMeasuredValueAtSomeTime"/>
+						<owl:someValuesFrom>
+							<owl:Class>
+								<owl:intersectionOf rdf:parseType="Collection">
+									<rdf:Description rdf:about="&Core;MeasuredValueExpression">
+									</rdf:Description>
+									<owl:Restriction>
+										<owl:onProperty rdf:resource="&Core;hasSimpleExpressionValue"/>
+										<owl:someValuesFrom>
+											<rdfs:Datatype>
+												<owl:onDatatype rdf:resource="&xsd;float"/>
+												<owl:withRestrictions rdf:parseType="Collection">
+													<rdf:Description>
+														<xsd:minInclusive rdf:datatype="&xsd;float">710.0</xsd:minInclusive>
+													</rdf:Description>
+												</owl:withRestrictions>
+											</rdfs:Datatype>
+										</owl:someValuesFrom>
+									</owl:Restriction>
+								</owl:intersectionOf>
+							</owl:Class>
+						</owl:someValuesFrom>
+					</owl:Restriction>
+				</owl:intersectionOf>
+			</owl:Class>
+		</owl:equivalentClass>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/Turbine">
+		<rdfs:subClassOf rdf:resource="&Core;MaterialArtifact"/>
+	</owl:Class>
+	
+	<owl:ObjectProperty rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/conformsTo">
+		<owl:inverseOf rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/satisfiedBy"/>
+	</owl:ObjectProperty>
+	
+	<owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/diameter1">
+		<rdf:type rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/Diameter"/>
+		<Core:hasMeasuredValueAtSomeTime rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/diameter1mve"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/diameter1mve">
+		<rdf:type rdf:resource="&Core;MeasuredValueExpression"/>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;float">48.0</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/je-dns1">
+		<rdf:type rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/JimJetEngine"/>
+		<Core:hasQuality rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/thrust1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/jetEngine1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/JetEngine"/>
+		<conformsTo rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/jimJetSpec2"/>
+		<Core:hasComponentPartAtSomeTime rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/turbine1"/>
+		<Core:hasQuality rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/thrust1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/jimJetSpec1">
+		<rdf:type rdf:resource="&Core;DesignSpecification"/>
+		<Core:prescribes rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/jetEngine1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/jimJetSpec2">
+		<rdf:type rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/JetEngineDesignSpec"/>
+	</owl:NamedIndividual>
+	
+	<owl:ObjectProperty rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/satisfiedBy">
+	</owl:ObjectProperty>
+	
+	<owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/th2">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/Thrust"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/thrust1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/Thrust"/>
+		<Core:hasMeasuredValueAtSomeTime rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/thrust1mve"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/thrust1mve">
+		<rdf:type rdf:resource="&Core;MeasuredValueExpression"/>
+		<Core:hasSimpleExpressionValue rdf:datatype="&xsd;float">690.0</Core:hasSimpleExpressionValue>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/turbine1">
+		<rdf:type rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/Turbine"/>
+		<Core:hasQuality rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/diameter1"/>
+	</owl:NamedIndividual>
 
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://nomagic.com/ontologies/jlogan/2024/JimJet/conformsTo -->
-
-    <owl:ObjectProperty rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/conformsTo"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://nomagic.com/ontologies/jlogan/2024/JimJet/Diameter -->
-
-    <owl:Class rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/Diameter">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-    </owl:Class>
-    
-
-
-    <!-- https://nomagic.com/ontologies/jlogan/2024/JimJet/JimDiameter -->
-
-    <owl:Class rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/JimDiameter">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/Diameter"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasMeasuredValueAtSomeTime"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasSimpleExpressionValue"/>
-                                        <owl:someValuesFrom>
-                                            <rdfs:Datatype>
-                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                                <owl:withRestrictions rdf:parseType="Collection">
-                                                    <rdf:Description>
-                                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">47.9</xsd:minExclusive>
-                                                    </rdf:Description>
-                                                    <rdf:Description>
-                                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">48.1</xsd:maxExclusive>
-                                                    </rdf:Description>
-                                                </owl:withRestrictions>
-                                            </rdfs:Datatype>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/Diameter"/>
-    </owl:Class>
-    
-
-
-    <!-- https://nomagic.com/ontologies/jlogan/2024/JimJet/JimJetEngine -->
-
-    <owl:Class rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/JimJetEngine">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/JetEngine"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasComponentPartAtSomeTime"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/Turbine"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasQuality"/>
-                                        <owl:someValuesFrom rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/JimDiameter"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasQuality"/>
-                        <owl:someValuesFrom rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/JimThrust"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/JetEngine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/conformsTo"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:oneOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/jimJetSpec1"/>
-                        </owl:oneOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://nomagic.com/ontologies/jlogan/2024/JimJet/JimThrust -->
-
-    <owl:Class rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/JimThrust">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://simpom.ohio.edu/examples/jet-engine-Base/Thrust"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasMeasuredValueAtSomeTime"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasSimpleExpressionValue"/>
-                                        <owl:someValuesFrom>
-                                            <rdfs:Datatype>
-                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                                <owl:withRestrictions rdf:parseType="Collection">
-                                                    <rdf:Description>
-                                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">710.0</xsd:minInclusive>
-                                                    </rdf:Description>
-                                                </owl:withRestrictions>
-                                            </rdfs:Datatype>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/Thrust"/>
-    </owl:Class>
-    
-
-
-    <!-- https://nomagic.com/ontologies/jlogan/2024/JimJet/Turbine -->
-
-    <owl:Class rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/Turbine">
-        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://nomagic.com/ontologies/jlogan/2024/JimJet/diameter1 -->
-
-    <owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/diameter1">
-        <rdf:type rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/Diameter"/>
-        <Core:hasMeasuredValueAtSomeTime rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/diameter1mve"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://nomagic.com/ontologies/jlogan/2024/JimJet/diameter1mve -->
-
-    <owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/diameter1mve">
-        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression"/>
-        <Core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">48.0</Core:hasSimpleExpressionValue>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://nomagic.com/ontologies/jlogan/2024/JimJet/jetEngine1 -->
-
-    <owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/jetEngine1">
-        <rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/JetEngine"/>
-        <Core:hasComponentPartAtSomeTime rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/turbine1"/>
-        <Core:hasQuality rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/thrust1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://nomagic.com/ontologies/jlogan/2024/JimJet/jimJetSpec1 -->
-
-    <owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/jimJetSpec1">
-        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/DesignSpecification"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://nomagic.com/ontologies/jlogan/2024/JimJet/thrust1 -->
-
-    <owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/thrust1">
-        <rdf:type rdf:resource="http://simpom.ohio.edu/examples/jet-engine-Base/Thrust"/>
-        <Core:hasMeasuredValueAtSomeTime rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/thrust1mve"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://nomagic.com/ontologies/jlogan/2024/JimJet/thrust1mve -->
-
-    <owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/thrust1mve">
-        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression"/>
-        <Core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">710.0</Core:hasSimpleExpressionValue>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://nomagic.com/ontologies/jlogan/2024/JimJet/turbine1 -->
-
-    <owl:NamedIndividual rdf:about="https://nomagic.com/ontologies/jlogan/2024/JimJet/turbine1">
-        <rdf:type rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/Turbine"/>
-        <Core:hasQuality rdf:resource="https://nomagic.com/ontologies/jlogan/2024/JimJet/diameter1"/>
-    </owl:NamedIndividual>
 </rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
-
