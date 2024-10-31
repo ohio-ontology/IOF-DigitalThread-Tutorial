@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY AnnotationVocabulary "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+	<!ENTITY Core "https://spec.industrialontologies.org/ontology/core/Core/">
+	<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+	<!ENTITY obo "http://purl.obolibrary.org/obo/">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY terms "http://purl.org/dc/terms/">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="http://simpom.ohio.edu/examples/bio-process-repspec/"
+	xmlns="http://simpom.ohio.edu/examples/bio-process-repspec/"
+	xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+	xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:obo="http://purl.obolibrary.org/obo/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:terms="http://purl.org/dc/terms/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/">
+		<owl:imports rdf:resource="http://simpom.ohio.edu/examples/bio-process-base/"/>
+	</owl:Ontology>
+	
+	<rdf:Description rdf:about="http://simpom.ohio.edu/examples/bio-process-base/brm1">
+		<specifiedBy rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/brm-S1"/>
+	</rdf:Description>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/ArtifactSpec">
+		<rdfs:subClassOf rdf:resource="&Core;InformationContentEntity"/>
+		<rdfs:comment xml:lang="en">Artifact Specification</rdfs:comment>
+	</owl:Class>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/DS1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/DurationSpec"/>
+		<obo:BFO_0000110 rdf:resource="http://simpom.ohio.edu/examples/bio-process-base/tve-21"/>
+	</owl:NamedIndividual>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/DurationSpec">
+		<rdfs:subClassOf rdf:resource="&Core;InformationContentEntity"/>
+		<rdfs:comment xml:lang="en">Duration Specification</rdfs:comment>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/MappingICE">
+		<rdfs:subClassOf rdf:resource="&Core;InformationContentEntity"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/ProcessRep">
+		<rdfs:subClassOf rdf:resource="&Core;InformationContentEntity"/>
+		<rdfs:comment xml:lang="en">Process Representation</rdfs:comment>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/QualitySpec">
+		<rdfs:subClassOf rdf:resource="&Core;InformationContentEntity"/>
+		<rdfs:comment xml:lang="en">Quality Specification</rdfs:comment>
+	</owl:Class>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/brm-S1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/brmSpec"/>
+	</owl:NamedIndividual>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/brmSpec">
+		<rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/ArtifactSpec"/>
+		<rdfs:comment xml:lang="en">BioReactionMedia Specification</rdfs:comment>
+	</owl:Class>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/buo-R1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/buoRep"/>
+		<specifiedBy rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/buo-S1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/buo-S1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/buoSpec"/>
+		<Core:isAbout rdf:resource="http://simpom.ohio.edu/examples/bio-process-base/buo1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/buo-cgp-DS1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/MappingICE"/>
+		<mapsFrom rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/cgp-S1"/>
+		<mapsTo rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/buo-S1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/buo-cpp-DS1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/MappingICE"/>
+		<mapsFrom rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/cpp-S1"/>
+		<mapsTo rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/buo-S1"/>
+	</owl:NamedIndividual>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/buoRep">
+		<rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/ProcessRep"/>
+		<rdfs:comment xml:lang="en">BioUnitOperation Representation</rdfs:comment>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/buoSpec">
+		<rdfs:subClassOf rdf:resource="&Core;PlanSpecification"/>
+		<rdfs:comment xml:lang="en">BioUnitOperation Specification</rdfs:comment>
+	</owl:Class>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/cgp-R1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/cgpRep"/>
+		<specifiedBy rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/cgp-S1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/cgp-S1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/cgpSpec"/>
+		<Core:isAbout rdf:resource="http://simpom.ohio.edu/examples/bio-process-base/cgp1"/>
+	</owl:NamedIndividual>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/cgpRep">
+		<rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/ProcessRep"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&obo;BFO_0000177"/>
+				<owl:someValuesFrom rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/buoRep"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment xml:lang="en">CellGrowthPhase Representation</rdfs:comment>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/cgpSpec">
+		<rdfs:subClassOf rdf:resource="&Core;PlanSpecification"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&obo;BFO_0000177"/>
+				<owl:someValuesFrom rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/buoSpec"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment xml:lang="en">CellGrowthPhase Specification</rdfs:comment>
+	</owl:Class>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/cpp-R1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/cppRep"/>
+		<specifiedBy rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/cpp-S1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/cpp-S1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/cppSpec"/>
+		<Core:isAbout rdf:resource="http://simpom.ohio.edu/examples/bio-process-base/cpp1"/>
+	</owl:NamedIndividual>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/cppRep">
+		<rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/ProcessRep"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&obo;BFO_0000177"/>
+				<owl:someValuesFrom rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/buoRep"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment xml:lang="en">CellProductionPhase Representation</rdfs:comment>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/cppSpec">
+		<rdfs:subClassOf rdf:resource="&Core;PlanSpecification"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&obo;BFO_0000177"/>
+				<owl:someValuesFrom rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/buoSpec"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:comment xml:lang="en">CellProductionPhase Specification</rdfs:comment>
+	</owl:Class>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/mapsFrom">
+		<rdfs:label>maps from</rdfs:label>
+		<owl:inverseOf rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/mapsTo"/>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/mapsTo">
+		<rdfs:label>maps to</rdfs:label>
+	</owl:ObjectProperty>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/pH-S1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/pHSpec"/>
+		<obo:BFO_0000177 rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/brm-S1"/>
+	</owl:NamedIndividual>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/pHSpec">
+		<rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/bio-process-repspec/QualitySpec"/>
+		<rdfs:comment xml:lang="en">pH Specification</rdfs:comment>
+	</owl:Class>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/examples/bio-process-repspec/specifiedBy">
+		<rdfs:subPropertyOf rdf:resource="&Core;isSubjectOf"/>
+		<rdfs:label>specified by</rdfs:label>
+	</owl:ObjectProperty>
+
+</rdf:RDF>

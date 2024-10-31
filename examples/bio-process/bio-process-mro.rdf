@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY AnnotationVocabulary "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+	<!ENTITY Core "https://spec.industrialontologies.org/ontology/core/Core/">
+	<!ENTITY bio-process-base "http://simpom.ohio.edu/examples/bio-process-base/">
+	<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+	<!ENTITY mro "http://simpom.ohio.edu/ontology/mro/">
+	<!ENTITY obo "http://purl.obolibrary.org/obo/">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY terms "http://purl.org/dc/terms/">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="http://simpom.ohio.edu/examples/bio-process-mro/"
+	xmlns="http://simpom.ohio.edu/examples/bio-process-mro/"
+	xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+	xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
+	xmlns:bio-process-base="http://simpom.ohio.edu/examples/bio-process-base/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:mro="http://simpom.ohio.edu/ontology/mro/"
+	xmlns:obo="http://purl.obolibrary.org/obo/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:terms="http://purl.org/dc/terms/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="http://simpom.ohio.edu/examples/bio-process-mro/">
+		<owl:imports rdf:resource="http://simpom.ohio.edu/examples/bio-process-base/"/>
+		<owl:imports rdf:resource="http://simpom.ohio.edu/ontology/mro/"/>
+	</owl:Ontology>
+	
+	<rdf:Description rdf:about="&bio-process-base;c1">
+		<mro:BFO_0000166 rdf:resource="http://simpom.ohio.edu/examples/bio-process-mro/cp1-d"/>
+	</rdf:Description>
+	
+	<owl:AnnotationProperty rdf:about="&bio-process-base;hasLowerBoundValue">
+	</owl:AnnotationProperty>
+	
+	<owl:AnnotationProperty rdf:about="&bio-process-base;hasUpperBoundValue">
+	</owl:AnnotationProperty>
+	
+	<owl:NamedIndividual rdf:about="&bio-process-base;ti-2">
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&bio-process-base;uos1">
+		<mro:prescribes rdf:resource="http://simpom.ohio.edu/examples/bio-process-mro/buo1-d"/>
+		<mro:prescribes rdf:resource="http://simpom.ohio.edu/examples/bio-process-mro/buo2-d"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-mro/brm2">
+		<rdf:type rdf:resource="&bio-process-base;BioReactionMedia"/>
+		<obo:BFO_0000171 rdf:resource="&bio-process-base;b2"/>
+		<mro:hasQuality rdf:resource="http://simpom.ohio.edu/examples/bio-process-mro/pH1-d"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-mro/buo1-d">
+		<rdf:type rdf:resource="&bio-process-base;BioUnitOperation"/>
+		<mro:BFO_0000118 rdf:resource="http://simpom.ohio.edu/examples/bio-process-mro/cgp1-d"/>
+		<mro:BFO_0000118 rdf:resource="http://simpom.ohio.edu/examples/bio-process-mro/cp1-d"/>
+		<mro:BFO_0000118 rdf:resource="http://simpom.ohio.edu/examples/bio-process-mro/cpp1-d"/>
+		<mro:BFO_0000199 rdf:resource="&bio-process-base;ti-2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-mro/buo2-d">
+		<rdf:type rdf:resource="&bio-process-base;BioUnitOperation"/>
+		<mro:BFO_0000118 rdf:resource="http://simpom.ohio.edu/examples/bio-process-mro/cgp2-d"/>
+		<mro:BFO_0000118 rdf:resource="http://simpom.ohio.edu/examples/bio-process-mro/cp1-d"/>
+		<mro:BFO_0000118 rdf:resource="http://simpom.ohio.edu/examples/bio-process-mro/cpp2-d"/>
+		<mro:BFO_0000199 rdf:resource="&bio-process-base;ti-2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-mro/cgp1-d">
+		<rdf:type rdf:resource="&bio-process-base;CellGrowthPhase"/>
+		<mro:BFO_0000063 rdf:resource="http://simpom.ohio.edu/examples/bio-process-mro/cpp1-d"/>
+		<mro:BFO_0000167 rdf:resource="&bio-process-base;b2"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-mro/cgp2-d">
+		<rdf:type rdf:resource="&bio-process-base;CellGrowthPhase"/>
+		<mro:BFO_0000063 rdf:resource="http://simpom.ohio.edu/examples/bio-process-mro/cpp2-d"/>
+		<mro:BFO_0000167 rdf:resource="&bio-process-base;b1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-mro/cp1-d">
+		<rdf:type rdf:resource="&bio-process-base;ControlProcess"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-mro/cpp1-d">
+		<rdf:type rdf:resource="&bio-process-base;CellProductionPhase"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-mro/cpp2-d">
+		<rdf:type rdf:resource="&bio-process-base;CellProductionPhase"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-mro/pH1-d">
+		<rdf:type rdf:resource="&bio-process-base;pH"/>
+		<mro:hasValueExpressionAtAllTimes rdf:resource="http://simpom.ohio.edu/examples/bio-process-mro/pHve1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-mro/pHve1">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<bio-process-base:hasLowerBoundValue rdf:datatype="&xsd;decimal">6.9</bio-process-base:hasLowerBoundValue>
+		<bio-process-base:hasUpperBoundValue rdf:datatype="&xsd;decimal">7.1</bio-process-base:hasUpperBoundValue>
+	</owl:NamedIndividual>
+
+</rdf:RDF>

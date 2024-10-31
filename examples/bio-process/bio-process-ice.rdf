@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY AnnotationVocabulary "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+	<!ENTITY Core "https://spec.industrialontologies.org/ontology/core/Core/">
+	<!ENTITY bio-process-base "http://simpom.ohio.edu/examples/bio-process-base/">
+	<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+	<!ENTITY obo "http://purl.obolibrary.org/obo/">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY terms "http://purl.org/dc/terms/">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="http://simpom.ohio.edu/examples/bio-process-ice/"
+	xmlns="http://simpom.ohio.edu/examples/bio-process-ice/"
+	xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+	xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
+	xmlns:bio-process-base="http://simpom.ohio.edu/examples/bio-process-base/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:obo="http://purl.obolibrary.org/obo/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:terms="http://purl.org/dc/terms/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/">
+		<owl:imports rdf:resource="http://simpom.ohio.edu/examples/bio-process-base/"/>
+	</owl:Ontology>
+	
+	<rdf:Description rdf:about="&bio-process-base;c1">
+		<Core:satisfiesRequirement rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/cr1"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:about="&bio-process-base;c2">
+		<Core:satisfiesRequirement rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/cr1"/>
+	</rdf:Description>
+	
+	<owl:NamedIndividual rdf:about="&bio-process-base;uos1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/BioUnitOperationSpecification"/>
+		<obo:BFO_0000110 rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/DS1"/>
+		<obo:BFO_0000110 rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/cgps1"/>
+		<obo:BFO_0000110 rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/cpps1"/>
+		<obo:BFO_0000110 rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/es1"/>
+		<Core:prescribes rdf:resource="&bio-process-base;buo1"/>
+		<Core:prescribes rdf:resource="&bio-process-base;buo2"/>
+		<Core:prescribes rdf:resource="&bio-process-base;buo3"/>
+		<Core:prescribes rdf:resource="&bio-process-base;buo4"/>
+		<Core:prescribes rdf:resource="&bio-process-base;buo5"/>
+	</owl:NamedIndividual>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/BioUnitOperationSpecification">
+		<rdfs:subClassOf rdf:resource="&Core;PlanSpecification"/>
+		<owl:equivalentClass>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&Core;prescribes"/>
+				<owl:someValuesFrom rdf:resource="&bio-process-base;BioUnitOperation"/>
+			</owl:Restriction>
+		</owl:equivalentClass>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/BioprocessPhaseSpecification">
+		<rdfs:subClassOf rdf:resource="&Core;PlanSpecification"/>
+	</owl:Class>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/CapS1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/CapabilitySpec"/>
+		<obo:BFO_0000110 rdf:resource="&bio-process-base;precve1-0.10"/>
+		<obo:BFO_0000177 rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/cr1"/>
+	</owl:NamedIndividual>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/CapabilitySpec">
+		<rdfs:subClassOf rdf:resource="&Core;InformationContentEntity"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/CellGrowthPhaseSpecification">
+		<rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/BioprocessPhaseSpecification"/>
+		<owl:equivalentClass>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&Core;prescribes"/>
+				<owl:someValuesFrom rdf:resource="&bio-process-base;CellGrowthPhase"/>
+			</owl:Restriction>
+		</owl:equivalentClass>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/CellProductionPhaseSpecfication">
+		<rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/BioprocessPhaseSpecification"/>
+		<owl:equivalentClass>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&Core;prescribes"/>
+				<owl:someValuesFrom rdf:resource="&bio-process-base;CellProductionPhase"/>
+			</owl:Restriction>
+		</owl:equivalentClass>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/ControllerReq">
+		<rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/EquipmentRequirement"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&Core;prescribes"/>
+				<owl:someValuesFrom rdf:resource="&bio-process-base;Controller"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+	</owl:Class>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/DS1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/DurationSpec"/>
+		<obo:BFO_0000110 rdf:resource="&bio-process-base;tive-21"/>
+		<obo:BFO_0000177 rdf:resource="&bio-process-base;uos1"/>
+	</owl:NamedIndividual>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/DurationSpec">
+		<rdfs:subClassOf rdf:resource="&Core;InformationContentEntity"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/EquipmentRequirement">
+		<rdfs:subClassOf rdf:resource="&Core;RequirementSpecification"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/EquipmentSpecification">
+		<rdfs:subClassOf rdf:resource="&Core;InformationContentEntity"/>
+	</owl:Class>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/cgpds1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/DurationSpec"/>
+		<obo:BFO_0000110 rdf:resource="&bio-process-base;tive-5"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/cgps1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/CellGrowthPhaseSpecification"/>
+		<obo:BFO_0000110 rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/cgpds1"/>
+		<plannedToPreceed rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/cpps1"/>
+		<Core:prescribes rdf:resource="&bio-process-base;cgp1"/>
+		<Core:prescribes rdf:resource="&bio-process-base;cgp2"/>
+		<Core:prescribes rdf:resource="&bio-process-base;cgp3"/>
+		<Core:prescribes rdf:resource="&bio-process-base;cgp4"/>
+		<Core:prescribes rdf:resource="&bio-process-base;cgp5"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/cppds1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/DurationSpec"/>
+		<obo:BFO_0000110 rdf:resource="&bio-process-base;tive-16"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/cpps1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/CellProductionPhaseSpecfication"/>
+		<obo:BFO_0000110 rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/cppds1"/>
+		<Core:prescribes rdf:resource="&bio-process-base;cpp1"/>
+		<Core:prescribes rdf:resource="&bio-process-base;cpp2"/>
+		<Core:prescribes rdf:resource="&bio-process-base;cpp4"/>
+		<Core:prescribes rdf:resource="&bio-process-base;cpp5"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/cr1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/ControllerReq"/>
+		<obo:BFO_0000110 rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/CapS1"/>
+		<obo:BFO_0000177 rdf:resource="&bio-process-base;uos1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/es1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/EquipmentSpecification"/>
+		<rdf:type>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<owl:Restriction>
+						<owl:onProperty rdf:resource="&Core;prescribes"/>
+						<owl:hasValue rdf:resource="&bio-process-base;b1"/>
+					</owl:Restriction>
+					<owl:Restriction>
+						<owl:onProperty rdf:resource="&Core;prescribes"/>
+						<owl:hasValue rdf:resource="&bio-process-base;b2"/>
+					</owl:Restriction>
+				</owl:unionOf>
+			</owl:Class>
+		</rdf:type>
+		<obo:BFO_0000110 rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/cr1"/>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/pHS1">
+		<rdf:type rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/pHSpec"/>
+		<obo:BFO_0000110 rdf:resource="http://simpom.ohio.edu/examples/bio-process-ice/pHve1"/>
+		<obo:BFO_0000177 rdf:resource="&bio-process-base;uos1"/>
+	</owl:NamedIndividual>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/pHSpec">
+		<rdfs:subClassOf rdf:resource="&Core;InformationContentEntity"/>
+	</owl:Class>
+	
+	<owl:NamedIndividual rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/pHve1">
+		<rdf:type rdf:resource="&Core;ValueExpression"/>
+		<bio-process-base:hasLowerBoundValue rdf:datatype="&xsd;decimal">6.9</bio-process-base:hasLowerBoundValue>
+		<bio-process-base:hasUpperBoundValue rdf:datatype="&xsd;decimal">7.1</bio-process-base:hasUpperBoundValue>
+	</owl:NamedIndividual>
+	
+	<owl:ObjectProperty rdf:about="http://simpom.ohio.edu/examples/bio-process-ice/plannedToPreceed">
+		<rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+	</owl:ObjectProperty>
+
+</rdf:RDF>

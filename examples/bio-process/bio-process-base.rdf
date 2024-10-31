@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY AnnotationVocabulary "https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+	<!ENTITY Core "https://spec.industrialontologies.org/ontology/core/Core/">
+	<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+	<!ENTITY obo "http://purl.obolibrary.org/obo/">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY terms "http://purl.org/dc/terms/">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="http://simpom.ohio.edu/examples/bio-process-base/"
+	xmlns="http://simpom.ohio.edu/examples/bio-process-base/"
+	xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+	xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:obo="http://purl.obolibrary.org/obo/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:terms="http://purl.org/dc/terms/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="http://simpom.ohio.edu/examples/bio-process-base/">
+		<owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/202401/core/Core/"/>
+	</owl:Ontology>
+	
+	<owl:Class rdf:about="&obo;BFO_0000019">
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-base/BioManufacturingProcess">
+		<rdfs:subClassOf rdf:resource="&Core;ManufacturingProcess"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-base/BioReactionMedia">
+		<rdfs:subClassOf rdf:resource="&Core;MaterialArtifact"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-base/BioUnitOperation">
+		<rdfs:subClassOf rdf:resource="&Core;PlannedProcess"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-base/Bioreactor">
+		<rdfs:subClassOf rdf:resource="&Core;MaterialArtifact"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-base/CellGrowthPhase">
+		<rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/bio-process-base/BioManufacturingProcess"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-base/CellProductionPhase">
+		<rdfs:subClassOf rdf:resource="http://simpom.ohio.edu/examples/bio-process-base/BioManufacturingProcess"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-base/ControlProcess">
+		<rdfs:subClassOf rdf:resource="&Core;PlannedProcess"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-base/Controller">
+		<rdfs:subClassOf rdf:resource="&Core;MaterialArtifact"/>
+	</owl:Class>
+	
+	<owl:DatatypeProperty rdf:about="http://simpom.ohio.edu/examples/bio-process-base/hasLowerBoundValue">
+		<rdfs:subPropertyOf rdf:resource="&Core;hasSimpleExpressionValue"/>
+	</owl:DatatypeProperty>
+	
+	<owl:DatatypeProperty rdf:about="http://simpom.ohio.edu/examples/bio-process-base/hasUpperBoundValue">
+		<rdfs:subPropertyOf rdf:resource="&Core;hasSimpleExpressionValue"/>
+	</owl:DatatypeProperty>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-base/pH">
+		<rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="http://simpom.ohio.edu/examples/bio-process-base/volume">
+		<rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&Core;ManufacturingProcess">
+	</owl:Class>
+	
+	<owl:Class rdf:about="&Core;MaterialArtifact">
+	</owl:Class>
+	
+	<owl:Class rdf:about="&Core;PlannedProcess">
+	</owl:Class>
+	
+	<owl:DatatypeProperty rdf:about="&Core;hasSimpleExpressionValue">
+	</owl:DatatypeProperty>
+
+</rdf:RDF>
